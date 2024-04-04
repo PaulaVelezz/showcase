@@ -1,0 +1,83 @@
+.partShow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(9 9 11);
+}
+
+.ourWorkTxt {
+    width: 60vw;
+    height: 0vh;
+    z-index: 8;
+    position: absolute;
+}
+
+#our{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    font-size: 4rem;
+    transform: translate(-20%, -50%);
+    color:rgb(231 229 228);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#work{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    font-size: 4rem;
+    transform: translate(20%, 50%);
+    color: rgb(231 229 228);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.ourWorkTxtDiv {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60vw;
+    height: 0vh;
+    background-color: rgb(91 33 182);
+    border: 1px  solid rgb(91 33 182);
+    border-radius: 1rem;
+}
+
+.scrollWork {
+    width: 100%;
+    height: 60vh;
+    background: rgb(91 33 182);
+    overflow: hidden;
+}
+
+.scrollImg {
+    width: 100%;
+    margin-top: 0%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.scrollImg img {
+    width: 100%;
+}
+
+#viewMore{
+    position: absolute;
+    bottom: 0;
+    padding: 0.7rem 1.5rem;
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid rgb(91 33 182);
+    border-radius: 7px;
+    background: #000;
+    color:rgb(231 229 228);
+    cursor: pointer;
+}
+
+#viewMore:hover{
+    background:rgb(231 229 228);
+    color: rgb(91 33 182);
+}
