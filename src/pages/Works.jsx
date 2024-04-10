@@ -1,9 +1,10 @@
 import React from 'react';
-import Showcase from '../components/Showcase/Showcase';
 
 const Works = () => {
   return (
-    <Showcase />
+    <div>
+      <h1>Works</h1>
+    </div>
   )
 }
 

@@ -16,9 +16,6 @@ const Navbar = () => {
                     <NavLink to='/resume' className={activeStyles} style={{marginRight: '0.5rem'}}> Resume </NavLink>
                     <NavLink to='/contact' className={activeStyles} style={{marginRight: '0.5rem'}}> Contact </NavLink>
                 </div>
-                <div>
-                    <button className="border rounded-lg border-stone-400 p-1">🌝🌚</button>
-                </div>
             </nav>  
         </div>
     );

@@ -8,11 +8,11 @@ import IMG4 from '../../assets/04.webp';
 import IMG5 from '../../assets/05.webp';
 
 const Projects = () => {
-    let Part7Ref = useRef(null);
+    let ShowRef = useRef(null);
     let DemoRef = useRef(null);
-    let OurWorkRef = useRef(null);
+    let SelectedWorkRef = useRef(null);
     let OurTextRef = useRef(null);
-    let OurRef = useRef(null);
+    let SelectRef = useRef(null);
     let OurWork = useRef(null);
     let ScrollRef = useRef(null);
   
@@ -20,20 +20,19 @@ const Projects = () => {
       let ctx7 = gsap.context(() => {
         let tl7 = gsap.timeline({
           scrollTrigger: {
-            trigger: Part7Ref,
+            trigger: ShowRef,
             start: "50% 50%",
             end: "300% 50%",
             scrub: 1,
             pin: true,
-            // markers: true,
           },
         });
   
         tl7
           .to(DemoRef, { bottom: "7%" })
           .to(OurTextRef, { height: "60vh" }, "height")
-          .to(OurWorkRef, { height: "60vh" }, "height")
-          .to(OurRef, { left: "0%" }, "height")
+          .to(SelectedWorkRef, { height: "60vh" }, "height")
+          .to(SelectRef, { left: "0%" }, "height")
           .to(OurWork, { right: "0%" }, "height")
           .to(ScrollRef, { marginTop: "-300%" });
       });
@@ -41,9 +40,9 @@ const Projects = () => {
       return () => ctx7.revert();
     }, []);
   return (
-    <section className={styles.part7} ref={(el) => (Part7Ref = el)}>
-        <div className={styles.ourWorkTxt} ref={(el) => (OurWorkRef = el)}>
-            <h1 className={styles.our} ref={(el) => (OurRef = el)}>Selected</h1>
+    <section className={styles.showcase} ref={(el) => (ShowRef = el)}>
+        <div className={styles.ourWorkTxt} ref={(el) => (SelectedWorkRef = el)}>
+            <h1 className={styles.selected} ref={(el) => (SelectRef = el)}>Selected</h1>
             <h1 className={styles.work} ref={(el) => (OurWork = el)}>Works</h1>
         </div>
         <div className={styles.ourWorkTxtDiv} ref={(el) => (OurTextRef = el)}>
