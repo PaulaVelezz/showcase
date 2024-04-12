@@ -6,6 +6,8 @@ import IMG2 from '../../assets/02.webp';
 import IMG3 from '../../assets/03.webp';
 import IMG4 from '../../assets/04.webp';
 import IMG5 from '../../assets/05.webp';
+import IMG6 from '../../assets/06.webp';
+import IMG7 from '../../assets/07.webp';
 
 const Projects = () => {
     let ShowRef = useRef(null);
@@ -53,8 +55,8 @@ const Projects = () => {
                     <img src={IMG3} alt="showcase"  style={{width: "100%"}}/>
                     <img src={IMG4} alt="showcase"  style={{width: "100%"}}/>
                     <img src={IMG5} alt="showcase"  style={{width: "100%"}}/>
-                    <img src={IMG1} alt="showcase"  style={{width: "100%"}}/>
-                    <img src={IMG2} alt="showcase"  style={{width: "100%"}}/>
+                    <img src={IMG6} alt="showcase"  style={{width: "100%"}}/>
+                    <img src={IMG7} alt="showcase"  style={{width: "100%"}}/>
                 </div>
             </div>
         </div>
