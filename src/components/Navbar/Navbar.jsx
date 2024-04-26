@@ -3,20 +3,19 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     const activeStyles = ({ isActive }) => 
         isActive 
-        ? 'px-2 py-1 text-violet-600 hover:text-violet-800' 
-        : 'px-2 py-1 text-stone-200 hover:text-orange-600';
+        ? 'px-2 py-1 border-t-2 border-r-2 border-lime-500' 
+        : 'px-2 py-1 text-violet-950 hover:text-stone-100';
 
     return (
-        <div className="flex justify-center">
-            <nav id="nav" className="w-fit fixed flex justify-center items-center p-3 border border-stone-400 rounded-lg backdrop-filter backdrop-blur-md text-stone-200">   
-                <div className="font-semibold">
-                    <NavLink to='/' className={activeStyles} style={{marginRight: '0.5rem'}}> Home </NavLink>
-                    <NavLink to='/about' className={activeStyles} style={{marginRight: '0.5rem'}}> About </NavLink>
-                    <NavLink to='/works' className={activeStyles} style={{marginRight: '0.5rem'}}> Works </NavLink>
-                    <NavLink to='/resume' className={activeStyles} style={{marginRight: '0.5rem'}}> Resume </NavLink>
-                    <NavLink to='/contact' className={activeStyles} style={{marginRight: '0.5rem'}}> Contact </NavLink>
-                </div>
-            </nav>  
+        <div className='nav flex justify-between p-5 mb-3 font-space text-stone-100 bg-zinc-950 text-base no-underline'>
+            <div id='nav-logo' className='text-lg font-extrabold'>Paula Velez</div>
+
+            <div id='nav-links' className='p-1 font-semibold'>
+                <NavLink to='/' style={{marginRight: '10px'}} className={activeStyles}>Home</NavLink>
+                <NavLink to='/about' className='mr-5'>About</NavLink>
+                <NavLink to='/works' className='mr-5'>Works</NavLink>
+                <NavLink to='/contact' className='mr-5'>Contact</NavLink>
+            </div>
         </div>
     );
 };
