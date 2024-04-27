@@ -5,7 +5,7 @@ import IMGP3 from '../../assets/p3b.png';
 
 const ProjectDetails = () => {
   return (
-    <div className='p-12 bg-violet-800 gap-20 flex flex-col'>
+    <div id='project-details' className='p-12 bg-violet-800 gap-20 flex flex-col'>
         <article className='place-content-center items-center flex flex-col w-full p-5 rounded-2xl bg-stone-50'>
             <div className='place-items-start justify-between items-start flex flex-row h-min overflow-visible p-0 w-full'>
                 <div className='place-items-start justify-between items-start self-stretch flex flex-col overflow-visible h-auto p-3 '>

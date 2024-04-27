@@ -12,7 +12,7 @@ const Footer = () => {
           <img src={LOGO} alt="logo" style={{width: '150px'}} />
         </div>
         <div className='flex items-center gap-2 font-semibold'>
-          <p>Go back to top</p>
+          <a href="#home">Go back to top</a>
           <TbArrowBigUpLinesFilled className='animate-bounce' />
         </div>
     </div>

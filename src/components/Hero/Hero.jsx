@@ -97,7 +97,7 @@ const Hero = () => {
     // }, []);
 
   return (
-    <section>
+    <section id='home'>
       <div className='bg-zinc-950 rounded-xl'>
       <Navbar />
         <div className='header w-full h-[30vh] p-5 flex items-center'>

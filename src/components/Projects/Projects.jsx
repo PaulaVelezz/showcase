@@ -42,7 +42,7 @@ const Projects = () => {
       return () => ctx7.revert();
     }, []);
   return (
-    <section className={styles.showcase} ref={(el) => (ShowRef = el)}>
+    <section id='works' className={styles.showcase} ref={(el) => (ShowRef = el)}>
         <div className={styles.ourWorkTxt} ref={(el) => (SelectedWorkRef = el)}>
             <h1 className={styles.selected} ref={(el) => (SelectRef = el)}>Selected</h1>
             <h1 className={styles.work} ref={(el) => (OurWork = el)}>Works</h1>
@@ -61,7 +61,7 @@ const Projects = () => {
             </div>
         </div>
         <button className={styles.demo} ref={(el) => (DemoRef = el)}>
-            Ver más proyectos
+          Ver más proyectos
         </button>
   </section>
 );
