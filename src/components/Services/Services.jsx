@@ -60,7 +60,7 @@ const Services = () => {
       }, []);
 
   return (
-    <section id='services' className='bg-zinc-950 rounded-xl p-10 mb-5'>
+    <section id='services' className='bg-zinc-950 rounded-xl p-10'>
         <h1 className='mb-20 text-7xl font-extrabold font-space text-stone-200'>Servicios</h1>
         <div id='container' className='flex justify-center'>
             <div id='cards' className='w-[80%]'>
@@ -78,7 +78,6 @@ const Services = () => {
                 ))}
             </div>
         </div>
-        <div id='container2' className='w-full h-[400px]'> </div>
     </section>
   )
 }

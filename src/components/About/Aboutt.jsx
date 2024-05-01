@@ -38,7 +38,7 @@ const Aboutt = () => {
     }, [aboutRef]);
 
   return (
-    <section ref={aboutRef}>
+    <section ref={aboutRef} className='p-4 mt-4 mb-4'>
         <div className='mt-10 mb-10 p-4 gap-2 flex flex-col items-start md:flex-row'>
             <div className='justify-center flex top-28 overflow-hidden rounded-md md:sticky md:w-1/2'>
                 <img src={PROFILE}

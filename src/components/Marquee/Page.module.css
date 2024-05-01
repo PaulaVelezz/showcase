@@ -1,0 +1,33 @@
+.main{
+    position: relative;
+    display: flex;
+    height: 12vh;
+    padding: 2rem;
+    overflow: hidden;
+    background:rgb(163 230 53);
+}
+
+.sliderContainer{
+    position: absolute;
+    top: calc(10vh - 110px);
+}
+
+.slider{
+    position: relative;
+    white-space: nowrap;
+}
+
+.slider p{
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+
+.slider p:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
