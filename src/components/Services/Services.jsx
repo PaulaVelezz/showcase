@@ -12,17 +12,17 @@ const servicesData = [
     {
         img: IMG2,
         title: 'UI Design',
-        desc: 'Design services are focused on transforming the essence of your brand into a visually appealing and intuitive online presence.',
+        desc: 'Design services are focus on translating your brand essence into a visually appealing and user-friendly online presence. This means creating a design that effectively connects with your target audience.',
     },
     {
         img: IMG1,
         title: 'Web Development',
-        desc: 'Through my expertise in web development, I can transform your vision into a custom-coded solution. Delivering excelent performance, clean, accessible, responsive, interactive and user-friendly websites.',
+        desc: 'Through my expertise in web development, I can transform your vision into a custom-coded solution. Delivering excelent performance, clean, accessible, responsive, interactive and user-friendly websites that showcase your brand effectively.',
     },
     {
         img: IMG3,
         title: 'UI Copywriting',
-        desc: ' lorem ipsum dolor sit amet consectetur adipisicing elit amet.',
+        desc: 'With a keen eye for detail and a way with words, I specialize in crafting compelling UI copy that resonates with your audience. From engaging headlines to clear call-to-actions, I ensure that every word enhances the user experience and drives action.',
     },
 ];
 

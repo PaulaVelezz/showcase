@@ -1,0 +1,32 @@
+import React from 'react';
+
+const ProjectCard = ({ title, desc, tags, img }) => {
+  return (
+    <article className='place-content-center items-center flex flex-col w-full p-9 rounded-2xl bg-stone-100'>
+        <div className='place-items-start justify-between items-start flex flex-row h-min overflow-visible p-0 w-full'>
+            <div className='place-items-start justify-between items-start self-stretch flex flex-col overflow-visible h-auto w-1/2 p-4'>
+                <div className='place-items-start items-start flex flex-col gap-6 overflow-visible w-full h-auto text-zinc-950'>
+                    <h2 className='text-4xl font-bold'>{title}</h2>
+                    <p className='text-lg '>{desc}</p>
+                </div>
+
+                <div className='flex flex-row flex-wrap max-w-xl gap-1'>
+                    {tags.map((tag, index) => (
+                        <span className='inline-flex px-3 py-1 text-xs font-light rounded-lg bg-zinc-900 text-stone-100'>{tag}</span>
+                    ))}
+                </div>
+                
+                <div className='flex w-10/12 justify-center text-lg font-semibold rounded-xl border border-violet-800 p-2 cursor-pointer hover:bg-violet-800 hover:text-stone-50'>
+                    <a href="#"> full project </a>
+                </div>
+            </div>
+
+            <div className='place-content-center items-center flex flex-row gap-2 overflow-hidden w-1/2 p-4'>
+                <img src={img} alt="detail"/>
+            </div>
+        </div>
+    </article>
+  )
+}
+
+export default ProjectCard; 
