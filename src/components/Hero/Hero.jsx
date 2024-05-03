@@ -1,10 +1,10 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-// import HeroIMG from '../../assets/img001.jpg';
 import { FaArrowUp, FaPlay } from "react-icons/fa";
 import { GiPolarStar } from "react-icons/gi"; 
 import Navbar from '../Navbar/Navbar';
 // import { gsap } from 'gsap';
+import Resume from '/Paula Velez_(ENG).pdf';
 
 const Hero = () => {
 
@@ -133,7 +133,7 @@ const Hero = () => {
                 <span>projects 👀</span>
               </div>
               <div className='btn border border-lime-400 mr-1 px-8 py-1 rounded-xl font-medium cursor-pointer'>
-                <span>resume 📄</span>
+                <a href={Resume} download>resume 📄</a>
               </div>
             </div>
 
@@ -143,13 +143,13 @@ const Hero = () => {
           </div>
 
           <div className='hero relative w-[95%] h-[60vh] flex justify-end items-start m-auto border border-violet-700 rounded-xl'>
-            {/* <img src={HeroIMG} alt="hero" className='rounded-2xl border border-zinc-950' /> */}
             <Spline scene="https://prod.spline.design/Y-viCDafQAAkobas/scene.splinecode" />
           </div>
 
           <div id='hero-wrapper' className='absolute w-0 h-full bg-lime-500'>
-            <div id='arrow' className='absolute w-24 h-24 bg-zinc-950 flex border-2 border-lime-400 rounded-full justify-center items-center text-lime-400 text-xl' style={{top: '-20em', right: '-60em', transform: 'rotate(-130deg)'}}>
-              <FaArrowUp />
+            <div id='arrow' className='absolute w-24 h-24 bg-zinc-950 flex border-2 border-lime-400 rounded-full justify-center items-center text-center text-lime-400 text-lg' style={{top: '-20em', right: '-60em', transform: 'rotate(20deg)'}}>
+              {/* <FaArrowUp /> */}
+              <span>play with this</span>
             </div>
           </div>
       </div>

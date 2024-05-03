@@ -8,7 +8,7 @@ import Footer from '../components/Footer/Footer';
 import Services from '../components/Services/Services';
 import Aboutt from '../components/About/Aboutt';
 import Marquee from '../components/Marquee/Marquee';
-import Pixel from '../components/Pixel/Pixel';
+// import Pixel from '../components/Pixel/Pixel';
 
 
 const MainLayout = () => {
@@ -21,7 +21,7 @@ const MainLayout = () => {
     <Marquee />
     <Projects />
     <ProjectDetails />
-    <Pixel />
+    {/* <Pixel /> */}
     <Contact />
     <Footer />
     </div>

@@ -61,11 +61,11 @@ const Aboutt = () => {
                         Right now i'm looking for a job offer, open for collaborations long and short term. Feel free to contact me.
                         <br></br>
                         <br></br>
-                        <ul className='flex gap-4'>
-                            <li><a href="#"><FaGithubSquare /></a></li>
-                            <li><a href="#"><FaLinkedin /></a></li>
-                        </ul>
                     </p>
+                    <ul className='flex gap-4'>
+                        <li><a href="https://github.com/PaulaVelezz"><FaGithubSquare /></a></li>
+                        <li><a href="https://www.linkedin.com/in/paula-velez/"><FaLinkedin /></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
