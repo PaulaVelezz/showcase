@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import IMG1 from '../../assets/img001.jpg';
-import IMG2 from '../../assets/img002.jpg';
-import IMG3 from '../../assets/img035.jpg';
+import IMG1 from '../../assets/img001.webp';
+import IMG2 from '../../assets/img002.webp';
+import IMG3 from '../../assets/img035.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,18 +61,19 @@ const Services = () => {
 
   return (
     <section id='services' className='bg-zinc-950 rounded-xl p-10'>
-        <h1 className='mb-20 text-7xl font-extrabold font-space text-stone-200'>Servicios</h1>
+        <h1 className='mb-20 text-7xl font-extrabold tracking-wide font-T1Korium text-stone-200'>Servicios</h1>
         <div id='container' className='flex justify-center'>
-            <div id='cards' className='w-[80%]'>
+            <div id='cards' className='lg:w-[80%] md:w-[90%] w-[90%]'>
                 {servicesData.map(({ img, title, desc }, index) => (
-                    <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} className={`sticky h-[320px] w-full flex justify-between items-center p-9 gap-10 mb-12 text-xl text-stone-200 rounded-lg bg-violet-700 border border-lime-500 ${index < 3 ? 'top-5' : 'top-60'}`}>
-                        <div className='overflow-hidden rounded-lg w-96 h-44'>
-                            <img src={img} alt="img"/>
-                        </div>
-                       
-                        <div className='w-3/4 gap-6 p-3 flex flex-col text-stone-200'>
-                            <h2 className='text-4xl font-bold font-space text-lime-400'>{title}</h2>
-                            <p>{desc}</p>
+                    <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} class={`sticky max-w-md mx-auto mb-12 text-stone-200 rounded-lg bg-violet-700 border border-lime-500 shadow-md overflow-hidden md:p-8 md:max-w-3xl ${index < 3 ? 'top-5' : 'top-60'}`}>
+                        <div class="md:flex items-center gap-4">
+                            <div class="md:shrink-0 rounded-lg">
+                                <img class="h-48 w-full object-cover rounded-lg md:h-48 md:w-52" src={img} />
+                            </div>
+                            <div class="p-6">
+                                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold font-space text-lime-400">{title}</h2>
+                                <p class="mt-4 text-base md:text-lg lg:text-xl text-stone-200">{desc}</p>
+                            </div>
                         </div>
                     </div>
                 ))}

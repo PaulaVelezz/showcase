@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='nav flex justify-between p-5 mb-3 font-space text-stone-100 bg-zinc-950 text-base no-underline'>
-            <div id='nav-logo' className='text-lg font-extrabold'>Paula Velez</div>
+            <div id='nav-logo' className='text-3xl font-T1Korium font-bold'>Paula Velez</div>
 
             <div id='nav-links' className='p-1 font-semibold'>
                 <Link to='/' style={{marginRight: '20px'}} className={activeStyles({ isActive: location.pathname === '/' })} onClick={() => ScrollToSection('home')}>Home</Link>

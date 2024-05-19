@@ -9,7 +9,7 @@ const Footer = () => {
           <p>2024 Copyrighted &#169;</p>
         </div>
         <div>
-          <img src={LOGO} alt="logo" style={{width: '120px'}} />
+          <img src={LOGO} alt="logo" style={{width: '120px', height: 'auto'}} />
         </div>
         <div className='flex items-center gap-2 font-semibold'>
           <a href="#home">Go back to top</a>

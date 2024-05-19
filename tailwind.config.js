@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         'space': ['Space Grotesk', 'sans-serif'],
+        'ojuju': ['Ojuju', 'sans-serif'],
+        'T1Korium': ['T1Korium', 'sans-serif'],
       },
     },
   },

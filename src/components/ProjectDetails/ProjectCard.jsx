@@ -31,7 +31,7 @@ const ProjectCard = ({ title, categories, desc, tags, img }) => {
 
             <div className='place-content-center items-center flex flex-row gap-2 overflow-hidden w-1/2 p-4'>
                 <div className='relative overflow-hidden rounded-md'>
-                    <img src={img} alt="detail" className='transition-transform transform-gpu hover:scale-110'/>
+                    <img src={img} alt="detail" sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' className='transition-transform transform-gpu hover:scale-110'/>
                 </div>
             </div>
             

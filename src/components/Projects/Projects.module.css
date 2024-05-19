@@ -31,9 +31,11 @@
     right: 35%;
     transform: translate(55%, 50%);
     color: rgb(91 33 182);
-    font-size: 4.7vw;
+    font-size: 4.8vw;
     font-weight: 700;
-    font-family: 'Space Grotesk', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'T1Korium', sans-serif;
+    letter-spacing: 0.2rem;
 }
 
 .ourWorkTxtDiv {
@@ -58,12 +60,14 @@
 
 .scrollImg {
     width: 100%;
+    height: auto;
     margin-top: 0%;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
 .scrollImg img {
     width: 100%;
+    height: auto;
 }
 
 .demo {
