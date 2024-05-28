@@ -3,6 +3,7 @@ import { LuArrowDownRightSquare } from "react-icons/lu";
 import { IoCalendarNumberOutline } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { PopupButton } from "react-calendly";
 
 const Contact = () => {
   return (
@@ -19,10 +20,13 @@ const Contact = () => {
                 </div>
                 
                 <div className='flex items-center gap-3 text-xl'>
-                    <a href="https://calendly.com/tuki" className='text-stone-100 items-center flex flex-row justify-center w-full gap-2 p-2 rounded-xl'>
-                        Book a videocall
-                        <LuArrowDownRightSquare style={{color: '#4c1788', fontSize: '2rem'}}/>
-                    </a>
+                    <PopupButton 
+                        className='text-stone-100 text-left flex flex-row w-full gap-2 p-2 rounded-xl'
+                        url="https://calendly.com/velezpaula-a" 
+                        rootElement={document.getElementById("root")}
+                        text="Book a meeting!"
+                    />
+                    <LuArrowDownRightSquare style={{color: '#4c1788', fontSize: '2rem'}}/>
                 </div>
             </div>
 

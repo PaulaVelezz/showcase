@@ -3,6 +3,10 @@ import IMGP2 from '../../assets/Mp2.webp';
 import IMGP3 from '../../assets/Mp3.webp';
 import IMGP4 from '../../assets/Mp4.webp';
 import IMGP5 from '../../assets/Mp5.webp';
+import BG2 from '../../assets/BG2.webp';
+import BG3 from '../../assets/BG3.webp';
+import BG4 from '../../assets/BG4.webp';
+import BG5 from '../../assets/BG5.webp';
 
 const projects = [
     {
@@ -29,23 +33,23 @@ const projects = [
         desc: 'Desarrollo de una WebApp que conecta a prestadores de servicios con clientes en tiempo real, ofreciendo soluciones rápidas a problemas del hogar.',
         tags: ['HTML5', 'CSS3', 'TypeScript', 'React.js', 'Next.js', 'TailwindCSS', 'DaisyUI'],
         img: IMGP2,
-        BGimg: IMGP1,
-        pageDesc:'lorem lorem lorem lorem lorem',
+        BGimg: BG2,
+        pageDesc:'Aplicación que conecta a prestadores de servicios confiables con clientes en tiempo real, ofreciendo soluciones rápidas a problemas del hogar. Reparame tiene a expertos en cada campo listos para resolver tus problemas. Conexión Instantánea: Olvídate de las búsquedas interminables. Variedad de Servicios: Desde gasistas y electricistas hasta pintores, contamos con expertos en cada campo para abordar tus necesidades. Seguridad y Confianza: Todos nuestros prestadores son profesionales verificados. Las calificaciones y comentarios garantizan una experiencia positiva y segura.',
         bullets: [
-            'bullet número 1',
-            'bullet número 2',
-            'bullet número 3',
-            'bullet número 4',
+            'Filtrado de servicios por categoría, rango de presupuesto y ranking de calificaciones.',
+            'Sistema de reseñas para cualificar a los prestadores.',
+            'Historial de tickets abiertos, finalizados y cancelados.',
         ]
     },
     {
+        id: 3,
         title: 'Learn With Me',
         categories: ['Web Development'],
         desc: 'Desarrollo de una plataforma de aprendizaje virtual, con contenido adaptado según el tipo de aprendizaje cognitivo del usuario. Brindando una experiencia de aprendizaje altamente interactiva y personalizada.',
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'TailwindCSS'],
         img: IMGP3,
-        BGimg: IMGP1,
-        pageDesc:'lorem lorem lorem lorem lorem',
+        BGimg: BG3,
+        pageDesc:'Plataforma de aprendizaje virtual, con contenido adaptado según el tipo de aprendizaje cognitivo del usuario. Brindando una experiencia de aprendizaje altamente interactiva y personalizada.',
         bullets: [
             'bullet número 1',
             'bullet número 2',
@@ -54,28 +58,30 @@ const projects = [
         ]
     },
     {
-        title: 'E-commerce',
+        id: 4,
+        title: 'Club Focaccia',
         categories: ['UI Design', 'Web Development'],
         desc: 'Desarrollo de tienda e-commerce.',
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit', 'Vite.js', 'Styled-Components'],
         img: IMGP4,
-        BGimg: IMGP1,
-        pageDesc:'lorem lorem lorem lorem lorem',
+        BGimg: BG4,
+        pageDesc:'Desarrollo de una tienda e-commerce especializada en la venta de focaccias. Con una experiencia de usuario amigable y una interfaz de usuario moderna.', 
         bullets: [
-            'bullet número 1',
-            'bullet número 2',
+            'Opciones de personalización de pedidos para adaptarse a las preferencias de los clientes.',
+            'Optimización para dispositivos móviles para una experiencia de compra fluida en cualquier pantalla',
             'bullet número 3',
             'bullet número 4',
         ]
     },
     {
-        title: 'E-commerce',
+        id: 5,
+        title: 'The Blessed Bean',
         categories: ['UI Design', 'Web Development'],
         desc: 'Desarrollo de tienda e-commerce.',
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit','Formik', 'YUP', 'Vite.js', 'Styled-Components'],
         img: IMGP5,
-        BGimg: IMGP1,
-        pageDesc:'lorem lorem lorem lorem lorem',
+        BGimg: BG5,
+        pageDesc:'Desarrollo de una tienda e-commerce especializada en la venta de una amplia variedad de cafes. Interfaz minimalista y moderna.',
         bullets: [
             'bullet número 1',
             'bullet número 2',

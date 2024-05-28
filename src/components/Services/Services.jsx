@@ -66,13 +66,13 @@ const Services = () => {
             <div id='cards' className='lg:w-[80%] md:w-[90%] w-[90%]'>
                 {servicesData.map(({ img, title, desc }, index) => (
                     <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} class={`sticky max-w-md mx-auto mb-12 text-stone-200 rounded-lg bg-violet-700 border border-lime-500 shadow-md overflow-hidden md:p-8 md:max-w-3xl ${index < 3 ? 'top-5' : 'top-60'}`}>
-                        <div class="md:flex items-center gap-4">
-                            <div class="md:shrink-0 rounded-lg">
-                                <img class="h-48 w-full object-cover rounded-lg md:h-48 md:w-52" src={img} />
+                        <div className="md:flex items-center gap-4">
+                            <div className="md:shrink-0 rounded-lg">
+                                <img className="h-48 w-full object-cover rounded-lg md:h-48 md:w-52" src={img} />
                             </div>
-                            <div class="p-6">
-                                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold font-space text-lime-400">{title}</h2>
-                                <p class="mt-4 text-base md:text-lg lg:text-xl text-stone-200">{desc}</p>
+                            <div className="p-6">
+                                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-space text-lime-400">{title}</h2>
+                                <p className="mt-4 text-base md:text-lg lg:text-xl text-stone-200">{desc}</p>
                             </div>
                         </div>
                     </div>
