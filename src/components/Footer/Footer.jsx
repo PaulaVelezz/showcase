@@ -4,7 +4,7 @@ import LOGO from '../../assets/logo.webp';
 
 const Footer = () => {
   return (
-    <div className= 'bg-violet-800 flex flex-row items-center justify-between w-full p-4 border rounded-b-3xl'>
+    <div className= 'bg-violet-800 flex flex-row items-center justify-between w-full p-3 rounded-b-2xl'>
         <div className='font-semibold'>
           <p>2024 Copyrighted &#169;</p>
         </div>

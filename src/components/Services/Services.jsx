@@ -60,7 +60,7 @@ const Services = () => {
       }, []);
 
   return (
-    <section id='services' className='bg-zinc-950 rounded-xl p-10'>
+    <section id='services' className='bg-zinc-950 rounded-t-2xl p-10'>
         <h1 className='mb-20 text-7xl font-extrabold tracking-wide font-T1Korium text-stone-200'>Servicios</h1>
         <div id='container' className='flex justify-center'>
             <div id='cards' className='lg:w-[80%] md:w-[90%] w-[90%]'>

@@ -3,14 +3,14 @@ import { Link, useParams } from 'react-router-dom';
 
 const ProjectCard = ({ title, categories, desc, tags, img }) => {
   return (
-    <article className='place-content-center items-center flex flex-col w-full p-9 rounded-xl bg-stone-100'>
+    <article className='place-content-center items-center flex flex-col w-full p-9 rounded-xl bg-zinc-950'>
         <div className='place-items-start justify-between items-start flex flex-row h-min overflow-visible p-0 w-full'>
             <div className='place-items-start justify-between items-start self-stretch flex flex-col overflow-visible h-auto w-1/2 p-4'>
-                <div className='place-items-start items-start flex flex-col gap-6 overflow-visible w-full h-auto text-zinc-950'>
+                <div className='place-items-start items-start flex flex-col gap-6 overflow-visible w-full h-auto text-stone-100'>
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-row items-center gap-4 p-1'>
                             { categories && categories.map((category, index) => (
-                                <span className='p-1 text-xs font-semibold rounded-md bg-lime-400 text-zinc-950'>{category}</span>
+                                <span className='p-1 text-sm font-semibold rounded-md bg-lime-400 text-zinc-800'>{category}</span>
                             ))}
                         </div>
                         <h2 className='text-4xl font-bold'>{title}</h2>
@@ -20,11 +20,11 @@ const ProjectCard = ({ title, categories, desc, tags, img }) => {
 
                 <div className='flex flex-row flex-wrap max-w-xl gap-1'>
                     {tags.map((tag, index) => (
-                        <span className='inline-flex px-3 py-1 text-xs font-light rounded-md bg-zinc-900 text-stone-100'>{tag}</span>
+                        <span className='inline-flex px-3 py-1 text-sm font-light rounded-md bg-zinc-800 text-stone-50'>{tag}</span>
                     ))}
                 </div>
                 
-                <div className='flex w-10/12 justify-center text-lg font-semibold rounded-md border border-violet-800 p-2 cursor-pointer hover:bg-violet-800 hover:text-stone-50'>
+                <div className='flex w-10/12 justify-center text-lg font-semibold rounded-md text-stone-100 bg-violet-800 border border-violet-800 p-2 cursor-pointer hover:bg-violet-900'>
                     <Link to={`/project/${title}`}> full project </Link>
                 </div>
             </div>

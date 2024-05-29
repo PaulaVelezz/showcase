@@ -79,7 +79,7 @@ const GallerySlider = () => {
 
 const Gallery = () => {
     return (
-        <main className='bg-violet-700 rounded-md'>
+        <main className=''>
             <h2 className='pl-4 pt-4 text-5xl text-stone-100 font-bold'>Gallery</h2>
             <div className="relative grid place-content-center w-full h-96">
                 <GallerySlider />

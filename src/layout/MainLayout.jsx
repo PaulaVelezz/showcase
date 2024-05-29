@@ -8,8 +8,7 @@ import Footer from '../components/Footer/Footer';
 import Services from '../components/Services/Services';
 import Aboutt from '../components/About/Aboutt';
 import Home from '../pages/Home';
-// import Marquee from '../components/Marquee/Marquee';
-// import Pixel from '../components/Pixel/Pixel';
+import Marquee from '../components/Marquee/Marquee';
 
 
 const MainLayout = () => {
@@ -20,10 +19,9 @@ const MainLayout = () => {
     {/* <Hero /> */}
     <Aboutt />
     <Services />
-    {/* <Marquee /> */}
+    <Marquee />
     <Projects />
     <ProjectDetails />
-    {/* <Pixel /> */}
     <Contact />
     <Footer />
     </div>

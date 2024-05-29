@@ -7,7 +7,7 @@ import { PopupButton } from "react-calendly";
 
 const Contact = () => {
   return (
-    <section id='contact' className='flex flex-col w-full h-screen justify-center items-center gap-10 p-4 bg-zinc-950 '>
+    <section id='contact' className='flex flex-col w-full h-screen justify-center items-center gap-10 p-4 bg-zinc-950 rounded-t-2xl'>
         <h1 className='text-7xl font-extrabold tracking-wide font-T1Korium text-stone-100'>Let's connect</h1>
         <div className='flex items-start flex-col gap-4 justify-start overflow-hidden p-0 relative w-[97%]'>
             <span className='bg-violet-800 h-[2px] overflow-hidden relative w-full' ></span>

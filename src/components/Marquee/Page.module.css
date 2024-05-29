@@ -1,15 +1,14 @@
 .main{
     position: relative;
     display: flex;
-    height: 12vh;
-    padding: 2rem;
+    height: 14vh;
     overflow: hidden;
     background:rgb(163 230 53);
 }
 
 .sliderContainer{
     position: absolute;
-    top: calc(10vh - 110px);
+    top: calc(12vh - 110px);
 }
 
 .slider{
