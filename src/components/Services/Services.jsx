@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import IMG1 from '../../assets/img001.webp';
-import IMG2 from '../../assets/img002.webp';
-import IMG3 from '../../assets/img035.webp';
+import IMG1 from '../../assets/icon1.webp';
+import IMG2 from '../../assets/icon2.webp';
+import IMG3 from '../../assets/icon5.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,14 +61,14 @@ const Services = () => {
 
   return (
     <section id='services' className='bg-zinc-950 rounded-t-2xl p-10'>
-        <h1 className='mb-20 text-7xl font-extrabold tracking-wide font-T1Korium text-stone-200'>Servicios</h1>
+        <h1 className='mb-20 text-7xl font-extrabold tracking-wide font-T1Korium text-stone-200'>Services</h1>
         <div id='container' className='flex justify-center'>
             <div id='cards' className='lg:w-[80%] md:w-[90%] w-[90%]'>
                 {servicesData.map(({ img, title, desc }, index) => (
                     <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} class={`sticky max-w-md mx-auto mb-12 text-stone-200 rounded-lg bg-violet-700 border border-lime-500 shadow-md overflow-hidden md:p-8 md:max-w-3xl ${index < 3 ? 'top-5' : 'top-60'}`}>
                         <div className="md:flex items-center gap-4">
                             <div className="md:shrink-0 rounded-lg">
-                                <img className="h-48 w-full object-cover rounded-lg md:h-48 md:w-52" src={img} />
+                                <img className="h-48 w-full object-cover bg-zinc-950 rounded-lg md:h-48 md:w-52" src={img} />
                             </div>
                             <div className="p-6">
                                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-space text-lime-400">{title}</h2>

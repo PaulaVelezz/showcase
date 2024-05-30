@@ -60,9 +60,9 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-        <button className={styles.demo} ref={(el) => (DemoRef = el)}>
-          Ver más proyectos
-        </button>
+        <span className={styles.demo} ref={(el) => (DemoRef = el)}>
+        &#8595; keep scrolling for more &#8595;
+        </span>
   </section>
 );
 }

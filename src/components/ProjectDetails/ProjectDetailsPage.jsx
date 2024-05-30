@@ -64,7 +64,7 @@ const ProjectDetailsPage = () => {
                         <p>Overview:</p>
                     </div>
                     <div className='flex flex-col gap-4 text-xl p-4'>
-                        <p>Estas son algunas de las funcionalidades destacables que fueron diseñadas y desarrolladas por el equipo para brindar soluciones innovadoras. </p>
+                        <p>These are some of the notable features that were designed and developed by the team to provide innovative solutions.</p>
                         <ul className='list-decimal ml-5'>
                             {project.bullets.map((bullet, index) => (
                                 <li key={index} className='mb-2'>{bullet}</li>

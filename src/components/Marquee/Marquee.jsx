@@ -45,8 +45,8 @@ const Marquee = () => {
     <main className={styles.main}>
         <div className={styles.sliderContainer}>
           <div ref={marqSlider} className={styles.slider}>
-            <p ref={firstTxt}>Showcase - Showcase - Showcase - Showcase</p>
-            <p ref={secondTxt}>- Showcase - Showcase - Showcase - Showcase</p>
+            <p ref={firstTxt}>Showcase - Showcase - Showcase - Showcase - Showcase </p>
+            <p ref={secondTxt}>- Showcase - Showcase - Showcase - Showcase - Showcase</p>
           </div>
         </div>
     </main>

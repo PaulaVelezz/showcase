@@ -1,6 +1,9 @@
 .main{
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 14vh;
     overflow: hidden;
     background:rgb(163 230 53);
@@ -8,7 +11,7 @@
 
 .sliderContainer{
     position: absolute;
-    top: calc(12vh - 110px);
+    top: calc(12vh - 80px);
 }
 
 .slider{
@@ -20,7 +23,7 @@
     position: relative;
     margin: 0px;
     color: white;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 500;
     padding-right: 50px;
 }

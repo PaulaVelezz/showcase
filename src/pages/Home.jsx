@@ -59,9 +59,9 @@ const Home = () => {
   return (
     <div className="relative" ref={comp}>
       <div id="intro-slider" ref={gradRef} className="h-screen w-full flex flex-col gap-16 tracking-tighter p-10 absolute top-0 left-0 font-space z-10 text-stone-300">
-        <h1 id="title-1" className="text-8xl"> Hi there, I'm Paula 🤙🏽 </h1>
-        <h1 id="title-2"className="text-8xl"> A Front-end Developer and UI designer</h1>
-        <h1 id="title-3"className="text-8xl"> Welcome to my portfolio</h1>
+        <h1 id="title-1" className="text-8xl"> Hi there, I'm <span className='font-T1Korium tracking-wide'> Paula </span></h1>
+        <h1 id="title-2" className="text-8xl"> Welcome to my portfolio</h1>
+        <h1 id="title-3" className="text-8xl"> 2024. </h1>
       </div>
     
       <Hero />
