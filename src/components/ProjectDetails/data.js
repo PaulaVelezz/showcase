@@ -30,7 +30,7 @@ const projects = [
         id: 2,
         title: 'Reparame',
         categories: ['Web Development'],
-        desc: 'Development of a WebApp that connects service providers with clients in real time, offering quick solutions to home problems.',
+        desc: 'Development of a WebApp that connects service providers with clients in real time, is an innovative project aimed at promoting the inclusion of manual and technical jobs in the digitalized era. With a focus on digitalization and connectivity, this application promotes accessibility and convenience by providing an easy and quick way to find help for home tasks.',
         tags: ['HTML5', 'CSS3', 'TypeScript', 'React.js', 'Next.js', 'TailwindCSS', 'Axios', 'JWT', 'Redux', 'Vercel', 'Figma', 'Trello', 'Slack'],
         img: IMGP2,
         BGimg: BG2,

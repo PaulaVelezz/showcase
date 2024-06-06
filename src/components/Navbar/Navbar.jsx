@@ -11,7 +11,7 @@ const Navbar = () => {
     const activeStyles = ({ isActive }) => isActive ? 'px-2 py-1 border-t-2 border-r-2 border-lime-500 rounded-lg' : 'px-2 py-1 text-stone-100 hover:border-t-2 hover:border-r-2 border-lime-500 rounded-lg';
 
     return (
-        <div className='nav flex justify-between p-5 mb-3 font-space text-stone-100 bg-zinc-950 text-base no-underline'>
+        <div className='nav flex justify-between p-5  font-space text-stone-100 bg-zinc-950 text-base no-underline'>
             <div id='nav-logo' className='text-3xl font-T1Korium font-bold'>Paula Velez</div>
 
             <div id='nav-links' className='p-1 font-semibold'>
