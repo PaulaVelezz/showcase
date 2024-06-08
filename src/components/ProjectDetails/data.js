@@ -8,6 +8,11 @@ import BG3 from '../../assets/BG3.webp';
 import BG4 from '../../assets/BG4.webp';
 import BG5 from '../../assets/BG5.webp';
 
+import P11 from '../../assets/p1(1).png';
+import P12 from '../../assets/p1(2).png';
+import P13 from '../../assets/p1(3).png';
+import P14 from '../../assets/p1(4).png';
+
 const projects = [
     {
         id: 1,
@@ -24,7 +29,8 @@ const projects = [
             'A notification section about school activities or events, the requirements to attend them, and also have a way to reject or confirm authorizations if necessary.',
             'Tracking section for academic grades filtered by subjects.',
             'School calendar that integrates course schedules, modifications to them and school activities or events.'
-        ]
+        ],
+        images: [ P11, P12, P13, P14 ],
     },
     {
         id: 2,
@@ -39,7 +45,13 @@ const projects = [
             'Filtering services by category, budget range and rating ranking.',
             'Review system to qualify verified providers.',
             'A history of tickets in progress, completed and canceled, with all the necessary data to quickly identify them.',
-        ]
+        ],
+        images: [
+            IMGP2, 
+            IMGP2, 
+            IMGP2, 
+            IMGP2, 
+        ],
     },
     {
         id: 3,
@@ -55,7 +67,13 @@ const projects = [
             'bullet número 2',
             'bullet número 3',
             'bullet número 4',
-        ]
+        ],
+        images: [
+            IMGP3, 
+            IMGP3, 
+            IMGP3, 
+            IMGP3
+        ],
     },
     {
         id: 4,
@@ -71,7 +89,13 @@ const projects = [
             'Mobile optimization for a seamless shopping experience on any screen size.',
             'bullet número 3',
             'bullet número 4',
-        ]
+        ],
+        images: [
+            IMGP4, 
+            IMGP4, 
+            IMGP4, 
+            IMGP4
+        ],
     },
     // {
     //     id: 5,

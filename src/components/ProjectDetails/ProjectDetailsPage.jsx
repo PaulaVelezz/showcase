@@ -3,8 +3,9 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-import Gallery from './Gallery';
+// import Gallery from './Gallery';
 import projects from '../ProjectDetails/data.js';
+import HorizontalGallery from './HorizontalGallery.jsx';
 
 const ProjectDetailsPage = () => {
     const { title } = useParams();
@@ -44,77 +45,80 @@ const ProjectDetailsPage = () => {
     return (
     <>
         <Navbar />
-        <section className='w-full h-full flex flex-col justify-center items-center'>
-            <div className=''>
-                <div className='w-full bg-center bg-cover h-96 rounded-b-2xl' style={{ backgroundImage: `url(${project.BGimg})`}}>
-                    <span className='bg-lime-400 rounded-md italic text-sm font-semibold text-zinc-800 p-1 z-10 ml-5'>{project.categories}</span>
-                    <h1 className='text-8xl font-space font-extrabold text-center text-lime-400 p-10 z-10'>{title}</h1>
-                </div>
-               
-                <div className='mt-2 w-full h-[3px] bg-lime-400'></div>
-                <p className='text-xl p-10 tracking-wide'>{project.pageDesc}</p>
-            </div>
-
-            <div className='w-full mt-6'>
-                <h2 className='text-6xl italic font-space font-extrabold text-center'>Product Overview</h2>
-                <div className='mt-6 w-full h-[3px] bg-lime-400'></div>
+        <main className='bg-gradient-to-b from-transparent to-violet-800'>
+            <section className='w-full h-full flex flex-col justify-center items-center'>
+                <div className=''>
+                    <div className='w-full bg-center bg-cover h-96 rounded-b-2xl' style={{ backgroundImage: `url(${project.BGimg})`}}>
+                        <span className='bg-lime-400 rounded-md italic text-sm font-semibold text-zinc-800 p-1 z-10 ml-5'>{project.categories}</span>
+                        <h1 className='text-8xl font-space font-extrabold text-center text-lime-400 p-10 z-10'>{title}</h1>
+                    </div>
                 
-                <div className='flex flex-row gap-10 p-10'>
-                    <div className='p-4 text-xl font-semibold'>
-                        <p>Overview:</p>
+                    <div className='mt-2 w-full h-[3px] bg-lime-400'></div>
+                    <p className='text-xl p-10 tracking-wide'>{project.pageDesc}</p>
+                </div>
+
+                <div className='w-full mt-6'>
+                    <h2 className='text-6xl italic font-space font-extrabold text-center'>Product Overview</h2>
+                    <div className='mt-6 w-full h-[3px] bg-lime-400'></div>
+                    
+                    <div className='flex flex-row gap-10 p-10'>
+                        <div className='p-4 text-xl font-semibold'>
+                            <p>Overview:</p>
+                        </div>
+                        <div className='flex flex-col gap-4 text-xl p-4'>
+                            <p>These are some of the notable features that were designed and developed by the team to provide innovative solutions.</p>
+                            <ul className='list-decimal ml-5'>
+                                {project.bullets.map((bullet, index) => (
+                                    <li key={index} className='mb-2'>{bullet}</li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                    <div className='flex flex-col gap-4 text-xl p-4'>
-                        <p>These are some of the notable features that were designed and developed by the team to provide innovative solutions.</p>
-                        <ul className='list-decimal ml-5'>
-                            {project.bullets.map((bullet, index) => (
-                                <li key={index} className='mb-2'>{bullet}</li>
+                    <div className='flex flex-row gap-10 p-10'>
+                        <div className='p-4 text-xl font-semibold'>
+                            <p>Stack:</p>
+                        </div>
+                        <div className='flex flex-row gap-4 text-xl p-4'>
+                            {project.tags.map ((tag, index) => (
+                                <span key={index} className='inline-flex px-3 py-1 text-sm font-light rounded-md bg-zinc-900 text-stone-100'>{tag}</span>
                             ))}
-                        </ul>
+                        </div>
                     </div>
                 </div>
-                <div className='flex flex-row gap-10 p-10'>
-                    <div className='p-4 text-xl font-semibold'>
-                        <p>Stack:</p>
-                    </div>
-                    <div className='flex flex-row gap-4 text-xl p-4'>
-                        {project.tags.map ((tag, index) => (
-                            <span key={index} className='inline-flex px-3 py-1 text-sm font-light rounded-md bg-zinc-900 text-stone-100'>{tag}</span>
-                        ))}
-                    </div>
+
+                <div className='w-full bg-zinc-950 rounded-2xl p-6 '>
+                    {/* <Gallery /> */}
+                    <HorizontalGallery project={project}/>
                 </div>
-            </div>
 
-            <div className='w-full bg-violet-700 rounded-2xl p-6'>
-                <Gallery />
-            </div>
+                <div className='w-full justify-between items-center flex mb-4 mt-4 p-6'>
+                    {currentProjectIndex !== null && (
+                        <button 
+                            onClick={handlePrevProject}
+                            disabled={currentProjectIndex === 0}
+                            className='border border-zinc-950 text-lg rounded-xl py-2 px-6 font-medium cursor-pointer hover:bg-lime-400'
+                        >
+                            Previous project
+                        </button>   
+                    )}
 
-            <div className='w-full justify-between items-center flex  p-6'>
-                {currentProjectIndex !== null && (
-                    <button 
-                        onClick={handlePrevProject}
-                        disabled={currentProjectIndex === 0}
-                        className='border border-zinc-950 text-lg rounded-xl py-2 px-6 font-medium cursor-pointer hover:bg-lime-400'
-                    >
-                        Previous project
-                    </button>   
-                )}
+                    <span>
+                    <Link to='/' className='text-base font-medium cursor-pointer hover:underline'>Go back home</Link>
+                    </span>
 
-                <span>
-                  <Link to='/' className='text-base font-medium cursor-pointer hover:underline'>Go back home</Link>
-                </span>
-
-                {currentProjectIndex !== null && currentProjectIndex < projects.length - 1 && (
-                    <button
-                        onClick={handleNextProject}
-                        className='border border-zinc-950 text-lg rounded-xl py-2 px-7 font-medium cursor-pointer hover:bg-lime-400'
-                    >
-                        Next project
-                    </button>
-                )}
-            </div>
-        </section> 
-        <Contact />
-        <Footer />
+                    {currentProjectIndex !== null && currentProjectIndex < projects.length - 1 && (
+                        <button
+                            onClick={handleNextProject}
+                            className='border border-zinc-950 text-lg rounded-xl py-2 px-7 font-medium cursor-pointer hover:bg-lime-400'
+                        >
+                            Next project
+                        </button>
+                    )}
+                </div>
+            </section> 
+            <Contact />
+            <Footer />
+        </main>
     </>
   )
 }

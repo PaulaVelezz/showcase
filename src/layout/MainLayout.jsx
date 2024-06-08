@@ -13,7 +13,7 @@ import Marquee from '../components/Marquee/Marquee';
 
 const MainLayout = () => {
   return (
-    <div className='w-full bg-stone-200'>
+    <div className='w-full bg-gradient-to-b from-transparent to-violet-800'>
     {/* <Navbar /> */}
     {/* <Home /> */}
     <Hero />
