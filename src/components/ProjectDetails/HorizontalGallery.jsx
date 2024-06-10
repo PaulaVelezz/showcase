@@ -1,21 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-import imgOne from '../../assets/gp1_1.webp';
-import imgTwo from '../../assets/gp1_2.webp';
-import imgThree from '../../assets/gp1_3.webp';
-import imgFour from '../../assets/gp1_4.webp'; 
 
 gsap.registerPlugin(ScrollTrigger);
 
-// const images = [
-//   imgOne,
-//   imgTwo,
-//   imgThree,
-//   imgFour
-// ];
-
-const HorizontalGallery = () => {
+const HorizontalGallery = ({ project }) => {
   const galleryRef = useRef();
   const triggerRef = useRef();
 
@@ -26,7 +15,7 @@ const HorizontalGallery = () => {
         translateX: 0,
       },
       {
-        translateX: '-300vw',
+        translateX: '-200vw',
         ease: 'none',
         duration: 1,
         scrollTrigger: {
@@ -43,20 +32,20 @@ const HorizontalGallery = () => {
  
 
   return (
-    <main className='scroll-section-outer overflow-hidden'>
-      <section className="" ref={triggerRef}> 
-        <div ref={galleryRef} className='scroll-section-inner h-[100vh] w-[400vw] gap-3 flex flex-row relative overflow-hidden'>
+    <main className='scroll-section-outer overflow-hidden rounded-2xl'>
+      <section ref={triggerRef}> 
+        <div ref={galleryRef} className='scroll-section-inner h-[100vh] w-[300vw] flex flex-row relative overflow-hidden gap-1'>
           <div className='scroll-section h-[100vh] w-[100vw] flex justify-center items-center'>
-            <img src={imgOne} alt="" />
+            <img src={project.imgOne} alt="project" className='object-center object-cover'/>
           </div>
           <div className='scroll-section h-[100vh] w-[100vw] flex justify-center items-center'>
-            <img src={imgTwo} alt="" />
+            <img src={project.imgTwo} alt="project" className='object-center object-cover'/>
           </div>
           <div className='scroll-section h-[100vh] w-[100vw] flex justify-center items-center'>
-            <img src={imgThree} alt="" />
+            <img src={project.imgThree} alt="project" className='object-center object-cover'/>
           </div>
           <div className='scroll-section h-[100vh] w-[100vw] flex justify-center items-center'>
-            <img src={imgFour} alt="" />
+            <img src={project.imgFour} alt="project" className='object-center object-cover'/>
           </div>
         </div>
       </section>

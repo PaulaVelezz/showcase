@@ -3,7 +3,6 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-// import Gallery from './Gallery';
 import projects from '../ProjectDetails/data.js';
 import HorizontalGallery from './HorizontalGallery.jsx';
 
@@ -45,9 +44,9 @@ const ProjectDetailsPage = () => {
     return (
     <>
         <Navbar />
-        <main className='bg-gradient-to-b from-transparent to-violet-800'>
+        <main className='bg-stone-100'>
             <section className='w-full h-full flex flex-col justify-center items-center'>
-                <div className=''>
+                <div>
                     <div className='w-full bg-center bg-cover h-96 rounded-b-2xl' style={{ backgroundImage: `url(${project.BGimg})`}}>
                         <span className='bg-lime-400 rounded-md italic text-sm font-semibold text-zinc-800 p-1 z-10 ml-5'>{project.categories}</span>
                         <h1 className='text-8xl font-space font-extrabold text-center text-lime-400 p-10 z-10'>{title}</h1>
@@ -86,9 +85,8 @@ const ProjectDetailsPage = () => {
                     </div>
                 </div>
 
-                <div className='w-full bg-zinc-950 rounded-2xl p-6 '>
-                    {/* <Gallery /> */}
-                    <HorizontalGallery project={project}/>
+                <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>
+                    <HorizontalGallery project={project} />
                 </div>
 
                 <div className='w-full justify-between items-center flex mb-4 mt-4 p-6'>

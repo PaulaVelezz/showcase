@@ -2,16 +2,26 @@ import IMGP1 from '../../assets/Mp1.webp';
 import IMGP2 from '../../assets/Mp2.webp';
 import IMGP3 from '../../assets/Mp3.webp';
 import IMGP4 from '../../assets/Mp4.webp';
-import IMGP5 from '../../assets/Mp5.webp';
 import BG2 from '../../assets/BG2.webp';
 import BG3 from '../../assets/BG3.webp';
 import BG4 from '../../assets/BG4.webp';
-import BG5 from '../../assets/BG5.webp';
+import P11 from '../../assets/p1_1.webp';
+import P12 from '../../assets/p1_2.webp';
+import P13 from '../../assets/p1_3.webp';
+import P14 from '../../assets/p1_4.webp';
+import P21 from '../../assets/p2_1.webp';
+import P22 from '../../assets/p2_2.webp';
+import P23 from '../../assets/p2_3.webp';
+import P24 from '../../assets/p2_4.webp';
+import P31 from '../../assets/p3_1.webp';
+import P32 from '../../assets/p3_2.webp';
+import P33 from '../../assets/p3_3.webp';
+import P34 from '../../assets/p3_4.webp';
+import P41 from '../../assets/p4_1.webp';
+import P42 from '../../assets/p4_2.webp';
+import P43 from '../../assets/p4_3.webp';
+import P44 from '../../assets/p4_4.webp';
 
-import P11 from '../../assets/p1(1).png';
-import P12 from '../../assets/p1(2).png';
-import P13 from '../../assets/p1(3).png';
-import P14 from '../../assets/p1(4).png';
 
 const projects = [
     {
@@ -30,7 +40,10 @@ const projects = [
             'Tracking section for academic grades filtered by subjects.',
             'School calendar that integrates course schedules, modifications to them and school activities or events.'
         ],
-        images: [ P11, P12, P13, P14 ],
+        imgOne: P11, 
+        imgTwo: P12, 
+        imgThree: P13, 
+        imgFour: P14,
     },
     {
         id: 2,
@@ -46,12 +59,10 @@ const projects = [
             'Review system to qualify verified providers.',
             'A history of tickets in progress, completed and canceled, with all the necessary data to quickly identify them.',
         ],
-        images: [
-            IMGP2, 
-            IMGP2, 
-            IMGP2, 
-            IMGP2, 
-        ],
+        imgOne: P21, 
+        imgTwo: P22, 
+        imgThree: P23, 
+        imgFour: P24,
     },
     {
         id: 3,
@@ -68,12 +79,10 @@ const projects = [
             'bullet número 3',
             'bullet número 4',
         ],
-        images: [
-            IMGP3, 
-            IMGP3, 
-            IMGP3, 
-            IMGP3
-        ],
+        imgOne: P31, 
+        imgTwo: P32, 
+        imgThree: P33, 
+        imgFour: P34,
     },
     {
         id: 4,
@@ -90,12 +99,10 @@ const projects = [
             'bullet número 3',
             'bullet número 4',
         ],
-        images: [
-            IMGP4, 
-            IMGP4, 
-            IMGP4, 
-            IMGP4
-        ],
+        imgOne: P41, 
+        imgTwo: P42, 
+        imgThree: P43, 
+        imgFour: P44,
     },
     // {
     //     id: 5,
