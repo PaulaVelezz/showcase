@@ -60,9 +60,9 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-        <span className={styles.demo} ref={(el) => (DemoRef = el)}>
-        &#8595; keep scrolling for more &#8595;
-        </span>
+        <div className={styles.demo} ref={(el) => (DemoRef = el)}>
+          <span className='animate-bounce'>&#8595; keep scrolling for more &#8595;</span>
+        </div>
   </section>
 );
 }

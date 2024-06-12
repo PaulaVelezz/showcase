@@ -65,7 +65,7 @@ const Services = () => {
         <div id='container' className='flex justify-center'>
             <div id='cards' className='lg:w-[90%] md:w-[90%] w-[90%]'>
                 {servicesData.map(({ img, title, desc }, index) => (
-                    <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} class={`sticky max-w-md mx-auto mb-12 text-stone-200 rounded-lg bg-violet-700 border border-lime-500 shadow-md overflow-hidden md:p-8 md:max-w-4xl ${index < 3 ? 'top-5' : 'top-60'}`}>
+                    <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} className={`sticky max-w-md mx-auto mb-12 text-stone-200 rounded-lg bg-violet-700 border border-lime-500 shadow-md overflow-hidden md:p-8 md:max-w-4xl ${index < 3 ? 'top-5' : 'top-60'}`}>
                         <div className="md:flex items-center gap-4">
                             <div className="md:shrink-0 rounded-lg">
                                 <img className="h-48 w-full object-cover bg-zinc-950 rounded-lg md:h-48 md:w-52" src={img} />

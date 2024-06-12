@@ -89,27 +89,27 @@ const ProjectDetailsPage = () => {
                     <HorizontalGallery project={project} />
                 </div>
 
-                <div className='w-full justify-between items-center flex mb-4 mt-4 p-6'>
+                <div className='w-full h-32 justify-between items-center flex mb-4 mt-4 p-6'>
                     {currentProjectIndex !== null && (
                         <button 
                             onClick={handlePrevProject}
                             disabled={currentProjectIndex === 0}
-                            className='border border-zinc-950 text-lg rounded-xl py-2 px-6 font-medium cursor-pointer hover:bg-lime-400'
+                            className='border border-zinc-600 text-base rounded-xl py-2 px-6 font-normal cursor-pointer hover:bg-lime-400'
                         >
-                            Previous project
+                            PREVIOUS CASE
                         </button>   
                     )}
 
                     <span>
-                    <Link to='/' className='text-base font-medium cursor-pointer hover:underline'>Go back home</Link>
+                    <Link to='/' className='text-base font-normal cursor-pointer hover:underline'>Back to home</Link>
                     </span>
 
                     {currentProjectIndex !== null && currentProjectIndex < projects.length - 1 && (
                         <button
                             onClick={handleNextProject}
-                            className='border border-zinc-950 text-lg rounded-xl py-2 px-7 font-medium cursor-pointer hover:bg-lime-400'
+                            className='border border-zinc-600 text-base rounded-xl py-2 px-7 font-normal cursor-pointer hover:bg-lime-400'
                         >
-                            Next project
+                           NEXT CASE
                         </button>
                     )}
                 </div>
