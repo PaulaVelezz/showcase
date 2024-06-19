@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import projects from '../ProjectDetails/data.js';
-import HorizontalGallery from './HorizontalGallery.jsx';
+const HorizontalGallery  =  lazy(() => import('./HorizontalGallery.jsx'));
 
 const ProjectDetailsPage = () => {
     const { title } = useParams();
@@ -86,7 +86,9 @@ const ProjectDetailsPage = () => {
                 </div>
 
                 <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>
-                    <HorizontalGallery project={project} />
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <HorizontalGallery project={project} />
+                    </Suspense>
                 </div>
 
                 <div className='w-full h-32 justify-between items-center flex mb-4 mt-4 p-6'>

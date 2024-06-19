@@ -68,7 +68,7 @@ const Services = () => {
                     <div key={index} ref={(ref) => (cardsRef.current[index] = ref)} className={`sticky max-w-md mx-auto mb-12 text-stone-200 rounded-lg bg-violet-700 border border-lime-500 shadow-md overflow-hidden md:p-8 md:max-w-4xl ${index < 3 ? 'top-5' : 'top-60'}`}>
                         <div className="md:flex items-center gap-4">
                             <div className="md:shrink-0 rounded-lg">
-                                <img className="h-48 w-full object-cover bg-zinc-950 rounded-lg md:h-48 md:w-52" src={img} />
+                                <img className="h-48 w-full object-cover bg-zinc-950 rounded-lg md:h-48 md:w-52" src={img} alt="services" />
                             </div>
                             <div className="p-6">
                                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-space text-lime-400">{title}</h2>

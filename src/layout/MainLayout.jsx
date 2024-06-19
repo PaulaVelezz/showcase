@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { lazy, Suspense} from 'react';
 // import Navbar from '../components/Navbar/Navbar';
-import Hero from '../components/Hero/Hero';
-import Projects from '../components/Projects/Projects';
-import ProjectDetails from '../components/ProjectDetails/ProjectDetails';
-import Contact from '../components/Contact/Contact';
-import Footer from '../components/Footer/Footer';
-import Services from '../components/Services/Services';
-import Aboutt from '../components/About/Aboutt';
-import Marquee from '../components/Marquee/Marquee';
-import AnotherMarquee from '../components/Marquee/AnotherMarquee';
+const Hero = lazy(() => import('../components/Hero/Hero'));
+const Aboutt = lazy(() => import('../components/About/Aboutt'));
+const Projects = lazy(() => import ('../components/Projects/Projects'));
+const ProjectDetails = lazy(() => import ('../components/ProjectDetails/ProjectDetails'));
+const Contact = lazy(() => import ('../components/Contact/Contact'));
+const Footer = lazy(() => import ('../components/Footer/Footer'));
+const Services = lazy(() => import ('../components/Services/Services'));
+const Marquee = lazy(() => import ('../components/Marquee/Marquee'));
+const AnotherMarquee = lazy(() => import ('../components/Marquee/AnotherMarquee'));
 
 
 const MainLayout = () => {
@@ -16,15 +16,17 @@ const MainLayout = () => {
     <div className='w-full bg-stone-100'>
     {/* bg-gradient-to-b from-transparent to-violet-800 */}
     {/* <Navbar /> */}
-    <Hero />
-    <Aboutt />
-    <Services />
-    <Marquee />
-    <Projects />
-    <AnotherMarquee />
-    <ProjectDetails />
-    <Contact />
-    <Footer />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Hero />
+      <Aboutt />
+      <Services />
+      <Marquee />
+      <Projects />
+      <AnotherMarquee />
+      <ProjectDetails />
+      <Contact />
+      <Footer />
+    </Suspense>
     </div>
   )
 }
