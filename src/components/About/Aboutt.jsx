@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import PROFILE from '../../assets/ascii.webp';
+import PROFILE from '../../assets/profilee.webp';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
