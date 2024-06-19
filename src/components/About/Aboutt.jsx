@@ -58,7 +58,9 @@ const Aboutt = () => {
                         Hi there! 👋 I'm Paula, and I'm a frontend developer based in Argentina 🌎. I'm passionate about transforming ideas into visually captivating digital experiences. And for that a calm mindset, a collaborative approach, and effective communication are key to my process.
                         <br></br>
                         <br></br>
-                        I enjoy working closely with clients, designers, and developers to ensure that every project is a harmonious blend of creativity and functionality 🤜💫🤛. 
+                        I enjoy working closely with clients, designers, and developers to ensure that every project is a harmonious blend of creativity and functionality. 
+                        <br></br>
+                        🤜💫🤛
                         <br></br>
                         <br></br>
                         Right now i'm looking for a job offer, open for collaborations long and short term. Feel free to contact me.

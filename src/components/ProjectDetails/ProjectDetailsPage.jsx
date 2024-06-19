@@ -86,7 +86,7 @@ const ProjectDetailsPage = () => {
                 </div>
 
                 <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div className='bg-zinc-950 text-stone-200'>Loading...</div>}>
                         <HorizontalGallery project={project} />
                     </Suspense>
                 </div>

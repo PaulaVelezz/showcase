@@ -1,5 +1,4 @@
 import React, { lazy, Suspense} from 'react';
-// import Navbar from '../components/Navbar/Navbar';
 const Hero = lazy(() => import('../components/Hero/Hero'));
 const Aboutt = lazy(() => import('../components/About/Aboutt'));
 const Projects = lazy(() => import ('../components/Projects/Projects'));
@@ -14,9 +13,7 @@ const AnotherMarquee = lazy(() => import ('../components/Marquee/AnotherMarquee'
 const MainLayout = () => {
   return (
     <div className='w-full bg-stone-100'>
-    {/* bg-gradient-to-b from-transparent to-violet-800 */}
-    {/* <Navbar /> */}
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className='w-full h-screen bg-zinc-950 text-stone-200'>Loading...</div>}>
       <Hero />
       <Aboutt />
       <Services />

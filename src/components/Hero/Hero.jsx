@@ -1,7 +1,7 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
 import Navbar from '../Navbar/Navbar';
-import Resume from '/Paula Velez_(ENG).pdf';
+import Resume from '/(ENG)_CV_ Paula Velez_Frontend Developer.pdf';
 
 const Hero = () => {
 
