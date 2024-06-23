@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
   return (
     <>
-    <section className="bg-white dark:bg-zinc-950">
+    <section className="bg-zinc-950">
       <div className='pl-6 pt-10 text-stone-100'>
         <Link to='/' className='px-2 py-1 border-2 border-violet-500 rounded-lg'>Back to 🏡</Link>
       </div>

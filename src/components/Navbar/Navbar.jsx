@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link to='/' style={{marginRight: '20px'}} className={activeStyles({ isActive: location.pathname === '/' })} onClick={() => ScrollToSection('home')}>Home</Link>
                 <Link to='#services' style={{marginRight: '20px'}} className={activeStyles ({ isActive: location.pathname === '#services' })} onClick={() => ScrollToSection('services')}>Services</Link>
                 <Link to='#works' style={{marginRight: '20px'}} className={activeStyles ({ isActive: location.pathname === '#works' })} onClick={() => ScrollToSection('works')}>Works</Link>
-                <Link to='/contact' style={{marginRight: '20px'}} className={activeStyles ({ isActive: location.pathname === '#contact' })} onClick={() => ScrollToSection('contact')}>Contact</Link>
+                <Link to='/contact' style={{marginRight: '20px'}} className={activeStyles ({ isActive: location.pathname === '/contact' })}>Contact</Link>
             </div>
         </div>
     );
