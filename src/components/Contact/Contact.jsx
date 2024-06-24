@@ -4,12 +4,29 @@ import { IoCalendarNumberOutline } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { PopupButton } from "react-calendly";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+    const text = "I'd love to hear from you and explore collaboration, answer your questions or discuss a new project.".split(" ");
+
   return (
     <section id='contact' className='flex flex-col w-full h-screen justify-center items-center gap-10 p-4 bg-zinc-950 rounded-t-2xl'>
         <h1 className='text-7xl font-extrabold tracking-wider font-T1Korium text-stone-100'>Let's get in touch!</h1>
-        <p className='text-stone-100 text-2xl'>I'd love to hear from you and explore collaboration, answer your questions or discuss a new project.</p>
+        <div className='flex gap-1'>
+            {text.map((word, index) => (
+                <motion.p
+                    key={index}
+                    className='text-stone-100 text-2xl'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.25, delay: index / 10, }}
+                    viewport={{ once: true }}
+                >
+                    {word}{" "}
+                </motion.p>
+            ))}
+        </div>
+        
         <div className='flex items-start flex-col gap-4 justify-start overflow-hidden p-0 relative w-[97%]'>
             <span className='bg-violet-800 h-[2px] overflow-hidden relative w-full' ></span>
         </div>
