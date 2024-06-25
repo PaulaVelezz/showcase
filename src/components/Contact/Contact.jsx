@@ -28,11 +28,11 @@ const Contact = () => {
         </div>
         
         <div className='flex items-start flex-col gap-4 justify-start overflow-hidden p-0 relative w-[97%]'>
-            <span className='bg-violet-800 h-[2px] overflow-hidden relative w-full' ></span>
+            <span className='bg-violet-700 h-[2px] overflow-hidden relative w-full'></span>
         </div>
 
         <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4'>
-            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-800'>
+            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-700'>
                 <div className='place-items-start text-3xl w-full'>
                     <IoCalendarNumberOutline style={{color: '#f7f7f7'}} />
                 </div>
@@ -42,13 +42,13 @@ const Contact = () => {
                         className='text-stone-100 text-left flex flex-row w-full gap-2 p-2 rounded-xl'
                         url="https://calendly.com/velezpaula-a" 
                         rootElement={document.getElementById("root")}
-                        text="Book a meeting!"
+                        text="Book a meeting"
                     />
-                    <LuArrowDownRightSquare style={{color: '#4c1788', fontSize: '2rem'}}/>
+                    <LuArrowDownRightSquare style={{color: '#6d28d9', fontSize: '2rem'}}/>
                 </div>
             </div>
 
-            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-800'>
+            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-700'>
                 <div className='place-items-start text-3xl w-full'>
                     <IoIosMail style={{color: '#f7f7f7'}} />
                 </div>
@@ -56,12 +56,12 @@ const Contact = () => {
                 <div className='flex items-center gap-3 text-xl'>
                     <a href="mailto:velezpaula.a@gmail.com" className='text-stone-100 items-center flex flex-row justify-center w-full gap-2 p-2 rounded-xl'>
                         Send a message
-                        <LuArrowDownRightSquare style={{color: '#4c1788', fontSize: '2rem'}}/>
+                        <LuArrowDownRightSquare style={{color: '#6d28d9', fontSize: '2rem'}}/>
                     </a>
                 </div>
             </div>
 
-            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-800'>
+            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-700'>
                 <div className='place-items-start text-3xl w-full'>
                     <FaLinkedin style={{color: '#f7f7f7'}} />
                 </div>
@@ -69,12 +69,12 @@ const Contact = () => {
                 <div className='flex items-center gap-3 text-xl'>
                     <a href="https://linkedin.com/in/paula-velez/" className='text-stone-100 items-center flex flex-row justify-center w-full gap-2 p-2 rounded-xl'>
                         Connect on LinkedIn
-                        <LuArrowDownRightSquare style={{color: '#4c1788', fontSize: '2rem'}}/>
+                        <LuArrowDownRightSquare style={{color: '#6d28d9', fontSize: '2rem'}}/>
                     </a>
                 </div>
             </div>
 
-            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-800'>
+            <div className='items-center flex flex-col justify-between p-4 w-52 h-48 rounded-xl border border-violet-700'>
                 <div className='place-items-start text-3xl w-full'>
                     <FaGithub style={{color: '#f7f7f7'}} />
                 </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 <div className='flex items-center gap-3 text-xl'>
                     <a href="https://github.com/PaulaVelezz" className='text-stone-100 items-center flex flex-row justify-center w-full gap-2 p-2 rounded-xl'>
                         Connect on Github
-                        <LuArrowDownRightSquare style={{color: '#4c1788', fontSize: '2rem'}}/>
+                        <LuArrowDownRightSquare style={{color: '#6d28d9', fontSize: '2rem'}}/>
                     </a>
                 </div>
             </div>

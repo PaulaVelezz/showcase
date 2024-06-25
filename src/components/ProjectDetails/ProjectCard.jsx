@@ -1,13 +1,19 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ title, categories, desc, tags, img }) => {
   return (
-    <article className='place-content-center items-center flex flex-col w-full p-9 rounded-xl bg-zinc-950'>
+    <motion.article className='place-content-center items-center flex flex-col w-full p-9 rounded-xl bg-zinc-950'
+        initial={{y: 100}} 
+        whileInView={{y: 0}}
+        transition={{duration: 0.5, ease: 'easeInOut'}}
+        viewport={{once: true}}
+    >
         <div className='flex flex-col h-min gap-4 overflow-visible p-0 w-full sm:items-center md:flex-col md:justify-center md:items-center lg:flex-row lg:place-items-start'>
             <div className='place-content-center items-center flex flex-row gap-2 overflow-hidden md:w-full md:h-[350px] lg:h-full'>
                 <div className='overflow-hidden'>
-                    <img src={img} alt="detail" className='transition-transform transform-gpu hover:scale-110'/>
+                    <img src={img} alt="detail"/>
                 </div>
             </div>
 
@@ -35,7 +41,7 @@ const ProjectCard = ({ title, categories, desc, tags, img }) => {
                 </div>
             </div>
         </div>
-    </article>
+    </motion.article>
   )
 }
 
