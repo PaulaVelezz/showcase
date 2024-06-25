@@ -53,7 +53,7 @@ const Aboutt = () => {
                 width={"100%"}
                 height={"auto"}
                 loading="lazy"
-                className='hidden object-cover object-center rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden'
+                className='hidden object-cover object-center rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden filter grayscale-[90%]'
                 alt="profile" />
             </motion.div>
 
