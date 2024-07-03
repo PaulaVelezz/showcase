@@ -1,4 +1,5 @@
 import React, { lazy, Suspense} from 'react';
+
 const Hero = lazy(() => import('../components/Hero/Hero'));
 const Aboutt = lazy(() => import('../components/About/Aboutt'));
 const Projects = lazy(() => import ('../components/Projects/Projects'));
@@ -8,7 +9,8 @@ const Footer = lazy(() => import ('../components/Footer/Footer'));
 const Services = lazy(() => import ('../components/Services/Services'));
 const Marquee = lazy(() => import ('../components/Marquee/Marquee'));
 const AnotherMarquee = lazy(() => import ('../components/Marquee/AnotherMarquee'));
-
+const Certifications = lazy(() => import ('../components/Certifications/Certifications'));
+import Testimonials from '../components/Testimonials/Testimonials.jsx';
 
 const MainLayout = () => {
   return (
@@ -21,6 +23,8 @@ const MainLayout = () => {
       <Projects />
       <AnotherMarquee />
       <ProjectDetails />
+      <Certifications />
+      <Testimonials />
       <Contact />
       <Footer />
     </Suspense>

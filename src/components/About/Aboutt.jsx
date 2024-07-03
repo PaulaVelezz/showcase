@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import PROFILE from '../../assets/profilee.webp';
+import PROFILE from '../../assets/profile(1).jpg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
@@ -53,7 +53,7 @@ const Aboutt = () => {
                 width={"100%"}
                 height={"auto"}
                 loading="lazy"
-                className='hidden object-cover object-center rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden filter grayscale-[90%]'
+                className='hidden object-cover object-center rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden'
                 alt="profile" />
             </motion.div>
 
@@ -73,7 +73,7 @@ const Aboutt = () => {
                         <br></br>
                         <br></br>
                     </p>
-                    <ul className='flex gap-4'>
+                    <ul className='flex text-xl gap-4'>
                         <li><a href="https://github.com/PaulaVelezz" aria-label='GitHub'><FaGithubSquare /></a></li>
                         <li><a href="https://www.linkedin.com/in/paula-velez/" aria-label='LinkedIn'><FaLinkedin /></a></li>
                         <li><a href="mailto:velezpaula.a@gmail.com" aria-label='Email'><ImMail /></a></li>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className= 'bg-zinc-950 text-sm text-stone-200 font-semibold flex flex-row items-center justify-between w-full py-5 px-4 border-t-2 border-zinc-800'>
       <div>
-        <p>&#169; 2024 - Designed and Developed by me :)</p>
+        <p>Designed and Developed by Paula Velez &#169; 2024 </p>
       </div>
       <div>
         <p>Thanks for visiting 👋 </p>
