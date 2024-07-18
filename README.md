@@ -2,7 +2,21 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🚀 INSTRUCTIONS TO CLONE AND RUN THE PROJECT LOCALLY: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
+1. Clona el repositorio:  <br/>
+👉 git clone https://github.com/PaulaVelezz/showcase.git
+
+2. Navega al directorio del proyecto:<br/>
+👉 cd showcase
+
+3. Instala las dependencias:<br/>
+👉 npm install
+
+4. Inicia el servidor de desarrollo:<br/>
+👉 npm run dev
+
+5. Vas a poder ver levantado el proyecto en:<br/>
+👉 http://localhost:5173/
