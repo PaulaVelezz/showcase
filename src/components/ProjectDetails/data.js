@@ -2,6 +2,7 @@ import IMGP1 from '../../assets/Mp1.webp';
 import IMGP2 from '../../assets/Mp2.webp';
 import IMGP3 from '../../assets/Mp3.webp';
 import IMGP4 from '../../assets/Mp4.webp';
+import IMGP5 from '../../assets/Mp5.webp';
 import BG2 from '../../assets/BG2.webp';
 import BG3 from '../../assets/BG3.webp';
 import BG4 from '../../assets/BG4.webp';
@@ -21,9 +22,33 @@ import P41 from '../../assets/p4_1.webp';
 import P42 from '../../assets/p4_2.webp';
 import P43 from '../../assets/p4_3.webp';
 import P44 from '../../assets/p4_4.webp';
+import P51 from '../../assets/p5_1.webp';
+import P52 from '../../assets/p5_2.webp';
+import P53 from '../../assets/p5_3.webp';
+import P54 from '../../assets/p5_4.webp';
 
 
 const projects = [
+    {
+        id: 0,
+        title: 'Saas Landing Page',
+        categories: ['Web Development'],
+        desc: 'Development of a landing page for a SaaS product. By prioritizing user experience, I ensure that the landing page not only showcases the products value but also guides visitors seamlessly toward conversion, ultimately driving success for the SaaS product.',
+        tags: ['HTML5', 'JavaScript', 'React.js', 'Vite.js', 'TailwindCSS', 'Framer-Motion', 'React-Router-Dom', 'prop-types', 'Figma'],
+        img: IMGP5,
+        BGimg: IMGP5,
+        pageDesc:'Development of a landing page, with a highly intuitive user experience and a modern user interface adapted for all devices. In this way, a successful incorporation of knowledge is guaranteed.',
+        bullets: [
+            'Clean and Efficient Code: The landing page design is built on a foundation of clean, efficient code. This ensures optimal performance, fast loading times, and a smooth user experience across all devices.',
+            'User-Centered Design: By meticulously crafted the pages layout and flow with the user in mind. The intuitive navigation, clear calls to action, and user-friendly interface make it easy for visitors to find what they need.',
+            'Responsive and Adaptive: The landing page is designed to be responsive and adaptive to all devices. This ensures that it can be used on any device and any screen size.',
+            'Focus on optimization: It is optimized to ensure that it loads quickly and efficiently across all devices.',
+        ],
+        imgOne: P51, 
+        imgTwo: P52, 
+        imgThree: P53, 
+        imgFour: P54,
+    },
     {
         id: 1,
         title: 'EduClass',
@@ -49,7 +74,7 @@ const projects = [
         id: 2,
         title: 'Reparame',
         categories: ['Web Development'],
-        desc: 'Development of a WebApp that connects service providers with clients in real time, is an innovative project aimed at promoting the inclusion of manual and technical jobs in the digitalized era. With a focus on digitalization and connectivity, this application promotes accessibility and convenience by providing an easy and quick way to find help for home tasks.',
+        desc: 'Development of a WebApp that connects service providers with clients in real time. Bridging the gap between digitalization and traditional trades, making it easy and convenient to find help for any home task, from plumbing to painting.',
         tags: ['HTML5', 'CSS3', 'TypeScript', 'React.js', 'Next.js', 'TailwindCSS', 'Axios', 'JWT', 'Redux', 'Vercel', 'Figma', 'Trello', 'Slack'],
         img: IMGP2,
         BGimg: BG2,
@@ -68,11 +93,11 @@ const projects = [
         id: 3,
         title: 'Learn With Me',
         categories: ['Web Development'],
-        desc: 'Development of a virtual learning platform, with content adapted according to the users type of cognitive learning. Providing a highly interactive and personalized learning experience.',
+        desc: 'Development of a virtual learning platform, with a focus on providing a learning environment where the content adapts to the users type of cognitive learning, making learning engaging, interactive, effective, and truly personalized.',
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Vercel', 'Figma', 'Trello', 'Miro', 'Slack'],
         img: IMGP3,
         BGimg: BG3,
-        pageDesc:'Development of a virtual learning platform, which has adapted and specialized content according to the users type of cognitive learning. Providing a highly interactive and personalized learning experience. In this way, a successful incorporation of knowledge is guaranteed.',
+        pageDesc:'Development of a virtual learning platform, which offers a tailored learning paths and content adapt to individual learning styles, ensuring optimal understanding and engagement. Utilizing adaptive learning technology, it caters to visual, auditory, kinesthetic, and other learning styles, maximizing comprehension.',
         bullets: [
             'It has an onboarding section of the application with an exhaustive form so that, according to what the user answers, it shows what type of cognitive learning is most likely.',
             'Section to view all the courses the user is taking and their progress.',
@@ -88,11 +113,11 @@ const projects = [
         id: 4,
         title: 'Club Focaccia',
         categories: ['UI Design', 'Web Development'],
-        desc: 'Development of a landing page. Designed to order food quickly, and at the same time very intuitive for the customer user. Providing you with all the information necessary for a purchase process.',
+        desc: 'Development of a landing page. Designed to simplify the food ordering process, this landing page offers an intuitive and user-friendly experience. With clear information about menu items, pricing, and delivery options, customers can easily make informed decisions.',
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit', 'Vite.js', 'Styled-Components', 'Figma'],
         img: IMGP4,
         BGimg: BG4,
-        pageDesc:'Development of a landing page for a store specialized in the sale of focaccias. With a highly intuitive user experience and a modern user interface adapted for all devices.', 
+        pageDesc:'Development of a landing page for a store specialized in the sale of focaccias. Enjoy a smooth and efficient food ordering experience, designed to eliminate confusion and ensure a stress-free purchase.', 
         bullets: [
             'It has order customization options to adapt to customer preferences.',
             'Mobile optimization for a seamless shopping experience on any screen size.',

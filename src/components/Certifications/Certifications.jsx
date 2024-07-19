@@ -49,7 +49,7 @@ const CertificatesData = [
 const Certifications = () => {
   return (
     <section className='bg-zinc-950 rounded-t-2xl rounded-b-2xl p-10 flex flex-col justify-center items-center'>
-        <h1 className='w-full mb-20 text-7xl font-extrabold tracking-wider font-T1Korium text-stone-200'>Certifications</h1>
+        <h1 className='w-full mb-14 text-7xl font-extrabold tracking-wider font-T1Korium text-stone-200'>Certifications</h1>
         <div className='w-[90%]'>
        
             {
