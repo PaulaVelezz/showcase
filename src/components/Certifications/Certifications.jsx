@@ -1,10 +1,4 @@
 import React from 'react';
-import C1 from '../../assets/c1.webp';
-import C2 from '../../assets/c2.webp';
-import C3 from '../../assets/c3.webp';
-import C4 from '../../assets/c4.webp';
-import C5 from '../../assets/c5.webp';
-import C6 from '../../assets/c6.webp';
 import Certificate from './Certificate';
 
 const CertificatesData = [
@@ -12,37 +6,37 @@ const CertificatesData = [
         id: 1,
         firstTitle: 'Certificado Intermedio',
         secondTitle: 'Desarrollador Fullstack',
-        image: C1,
+        image: 'https://i.postimg.cc/0NgSVvPZ/c2.webp',
     },
     {
         id: 2,
         firstTitle: 'Certificado Experiencia',
         secondTitle: 'Desarrollador Frontend',
-        image: C3,
+        image: 'https://i.postimg.cc/DzdS5bCy/c3.webp',
     },
     {
         id: 3,
         firstTitle: 'Certificado Intermedio',
         secondTitle: 'Programador',
-        image: C2,
+        image: 'https://i.postimg.cc/4xGZP2jV/c1.webp',
     },
     {
         id: 4,
         firstTitle: 'Certificado',
         secondTitle: 'React.js',
-        image: C4,
+        image: 'https://i.postimg.cc/jjXjyY5D/c4.webp',
     },
     {
         id: 5,
         firstTitle: 'Certificado',
         secondTitle: 'Javascript',
-        image: C6,
+        image: 'https://i.postimg.cc/mDggwpz8/c6.webp',
     },
     {
         id: 6,
         firstTitle: 'Certificado',
         secondTitle: 'Diseño Web',
-        image: C5,
+        image: 'https://i.postimg.cc/RhjCvMPD/c5.webp',
     },
 ];
 

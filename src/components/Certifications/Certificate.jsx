@@ -20,7 +20,9 @@ const Certificate = ({certificate}) => {
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={styles.certificate_container}>
       <p>{firstTitle}</p>
         <motion.div variants={animation} animate={isActive ? "open" : "closed"} className={styles.img_container}>
-          <img src={image} alt="certificate" />
+          <a href={image} target="_blank">
+            <img src={image} alt="certificate" />
+          </a>
         </motion.div>
       <p>{secondTitle}</p>
     </div>
