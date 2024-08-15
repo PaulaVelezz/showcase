@@ -22,7 +22,7 @@ const ProjectCard = ({ title, categories, desc, tags, img }) => {
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-row items-center gap-4 p-1'>
                             { categories && categories.map((category, index) => (
-                                <span className='p-1 text-xs lg:text-sm md:text-xs font-semibold rounded-md bg-lime-400 text-zinc-800'>{category}</span>
+                                <span key={index} className='p-1 text-xs lg:text-sm md:text-xs font-semibold rounded-md bg-lime-400 text-zinc-800'>{category}</span>
                             ))}
                         </div>
                         <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold'>{title}</h2>
@@ -31,7 +31,7 @@ const ProjectCard = ({ title, categories, desc, tags, img }) => {
 
                     <div className='flex flex-row flex-wrap max-w-xl gap-1'>
                         {tags.map((tag, index) => (
-                            <span className='inline-flex px-3 py-1 text-xs md:px-2 lg:text-sm md:text-xs font-light rounded-md bg-zinc-800 text-stone-50'>{tag}</span>
+                            <span key={index} className='inline-flex px-3 py-1 text-xs md:px-2 lg:text-sm md:text-xs font-light rounded-md bg-zinc-800 text-stone-50'>{tag}</span>
                         ))}
                     </div>
 

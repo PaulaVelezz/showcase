@@ -48,7 +48,7 @@ const Certifications = () => {
        
             {
                 CertificatesData.map( certificate => {
-                    return <Certificate certificate={certificate} />
+                    return <Certificate key={certificate.id} certificate={certificate} />
                 })
             }
         </div>

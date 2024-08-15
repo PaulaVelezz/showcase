@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import PROFILE from '../../assets/profile(1).jpg';
+import PROFILE from '../../assets/profilee.webp';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
@@ -69,7 +69,7 @@ const Aboutt = () => {
                         💫&#129307;&#127996;
                         <br></br>
                         <br></br>
-                        Right now i'm looking for a job offer, open for collaborations long and short term. Feel free to contact me.
+                        Right now, I'm open to job opportunities for both remote and non-remote positions where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience feel free to contact me.
                         <br></br>
                         <br></br>
                     </p>
