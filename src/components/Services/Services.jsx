@@ -21,8 +21,8 @@ const servicesData = [
     },
     {
         img: IMG3,
-        title: 'UI Copywriting',
-        desc: 'With a keen eye for detail and a way with words, I specialize in crafting compelling UI copy that resonates with your audience. From engaging headlines to clear call-to-actions, I ensure that every word enhances the user experience and drives action.',
+        title: 'QA Manual Testing',
+        desc: 'I ensure the quality and performance of your digital product or software conducting functional, usability, compatibility, and performance testing. My primary focus is on pinpointing and reporting errors to ensure a seamless user experience.',
     },
 ];
 

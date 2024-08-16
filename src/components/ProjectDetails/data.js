@@ -38,11 +38,23 @@ const projects = [
         img: IMGP5,
         BGimg: IMGP5,
         pageDesc:'Development of a landing page, with a highly intuitive user experience and a modern user interface adapted for all devices. In this way, a successful incorporation of knowledge is guaranteed.',
-        bullets: [
-            'Clean and Efficient Code: The landing page design is built on a foundation of clean, efficient code. This ensures optimal performance, fast loading times, and a smooth user experience across all devices.',
-            'User-Centered Design: By meticulously crafted the pages layout and flow with the user in mind. The intuitive navigation, clear calls to action, and user-friendly interface make it easy for visitors to find what they need.',
-            'Responsive and Adaptive: The landing page is designed to be responsive and adaptive to all devices. This ensures that it can be used on any device and any screen size.',
-            'Focus on optimization: It is optimized to ensure that it loads quickly and efficiently across all devices.',
+        features: [
+            {   
+                title: 'Intuitive User Interface:',
+                text: 'This project has a modern, minimalist design, it uses clear typography, strategic whitespace, and intuitive calls-to-action to guide users through the content effortlessly.',
+            },
+            {
+                title: 'Adaptive Design for All Devices:',
+                text: 'The landing page seamlessly adjusts to different screen sizes and devices. Whether visitors are browsing on a desktop, tablet, or smartphone, the experience remains consistent and engaging.',
+            },
+            {
+                title: 'User-Centered Design:',
+                text: 'The layout is designed for natural eye flow, important information is prominently displayed, and navigation is intuitive.',
+            },
+            {
+                title: 'Focus on Optimization:',
+                text: 'It is optimized to ensure that it loads quickly and efficiently across all devices. It utilizes relevant keywords and optimizes image sizes. ',
+            },
         ],
         imgOne: P51, 
         imgTwo: P52, 
@@ -58,12 +70,23 @@ const projects = [
         img: IMGP1,
         BGimg: IMGP1,
         pageDesc:'Educational management platform that optimizes communication and monitoring processes between the institution, teachers and students. Providing transparency, comfort and immediacy to users. With this tool, it is possible to overcome the limitations present in traditional communication, reducing incoherent messages and loss of information.',
-        bullets: [
-            'Section for monitoring attendance, absences and withdrawals, with their respective metrics, in addition to having a section dedicated to uploading certificates to justify absences.',
-            'Section of filtered notifications of a general type (involving the entire institution) and by current membership course.',
-            'A notification section about school activities or events, the requirements to attend them, and also have a way to reject or confirm authorizations if necessary.',
-            'Tracking section for academic grades filtered by subjects.',
-            'School calendar that integrates course schedules, modifications to them and school activities or events.'
+        features: [
+            {
+                title: 'Real-time Updates & Filtered Notifications:',
+                text: 'Receive relevant notifications based on your specific role or course enrollment. Stay informed about general announcements, course updates, and personalized messages.',
+            },
+            {
+                title: 'Attendance Management',
+                text: 'Effortlessly monitor student attendance, absences and withdrawals, generating comprehensive reports and insights. In addition a secure section to upload and submit relevant documents to justify their absences.',
+            },
+            {
+                title: 'Academic Grade Tracking:',
+                text: 'Monitor and manage academic grades with ease. Filter grades by subject and student, providing a clear overview of performance and progress.',
+            },
+            {
+                title: 'Authorization & Confirmation:',
+                text: 'Manage authorizations for events and activities with ease. Students can easily confirm or reject participation requests, ensuring streamlined communication and accountability.',
+            },
         ],
         imgOne: P11, 
         imgTwo: P12, 
@@ -79,10 +102,23 @@ const projects = [
         img: IMGP2,
         BGimg: BG2,
         pageDesc:'A WebApp that connects reliable service providers with clients in real time, offering quick solutions to home problems. Reparame offers a variety of services from gas fitters and electricians to painters, ready to address your needs. Additionally, a positive and safe experience is guaranteed through a rating and comment system.',
-        bullets: [
-            'Filtering services by category, budget range and rating ranking.',
-            'Review system to qualify verified providers.',
-            'A history of tickets in progress, completed and canceled, with all the necessary data to quickly identify them.',
+        features: [
+            {
+                title: 'Personalized Filtering:',
+                text: 'Find the perfect professional for your specific needs with advanced filtering options. Filter by service category, budget range, and rating ranking to narrow your search and find the ideal match.',
+            },
+            {
+                title: 'Detailed Profiles and Reviews:',
+                text: 'Access detailed profiles of each service provider, including their expertise, experience, and customer ratings.',
+            },
+            {
+                title: 'Track Your Service Tickets:',
+                text: 'Maintain a clear overview of your service requests. Easily track the status of your tickets, from in progress to completed and canceled, with all necessary information readily available.',
+            },
+            {
+                title: 'Real-Time Availability:',
+                text: 'Reparame provides instant access to a network of verified service providers, ready to address your needs.',
+            },
         ],
         imgOne: P21, 
         imgTwo: P22, 
@@ -98,11 +134,23 @@ const projects = [
         img: IMGP3,
         BGimg: BG3,
         pageDesc:'Development of a virtual learning platform, which offers a tailored learning paths and content adapt to individual learning styles, ensuring optimal understanding and engagement. Utilizing adaptive learning technology, it caters to visual, auditory, kinesthetic, and other learning styles, maximizing comprehension.',
-        bullets: [
-            'It has an onboarding section of the application with an exhaustive form so that, according to what the user answers, it shows what type of cognitive learning is most likely.',
-            'Section to view all the courses the user is taking and their progress.',
-            'Section with a roadmap designed to easily visualize the contents of each course offered.',
-            'Dashboard section where the user can view from the progress of each course to upcoming deadlines.',
+        features: [
+            {
+                title: 'Personalized Learning Paths:',
+                text: 'Through a comprehensive onboarding process, users complete an in-depth form that identifies their dominant learning style. Based on this analysis, the platform dynamically tailors learning paths and content, presenting information in a way that resonates best with the individuals cognitive style.',
+            },
+            {
+                title: 'Dynamic Dashboard:',
+                text: 'Users have access to a dedicated section that clearly displays all their enrolled courses, their progress, and upcoming deadlines. Empowering learners to take control of their educational path.',
+            },
+            {
+                title: 'Interactive Roadmap:',
+                text: 'A visual roadmap allows users to effortlessly navigate the content of each course. This intuitive interface provides a clear understanding of the learning objectives, modules, and assessments, fostering a sense of structure and guidance.',
+            },
+            {
+                title: 'Adaptive Learning Technology:',
+                text: 'Our platform leverages adaptive learning technology to constantly adjust the difficulty and pace of learning materials based on user performance. This ensures each learner is challenged appropriately, maximizing comprehension.',
+            },
         ],
         imgOne: P31, 
         imgTwo: P32, 
@@ -117,12 +165,24 @@ const projects = [
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit', 'Vite.js', 'Styled-Components', 'Figma'],
         img: IMGP4,
         BGimg: BG4,
-        pageDesc:'Development of a landing page for a store specialized in the sale of focaccias. Enjoy a smooth and efficient food ordering experience, designed to eliminate confusion and ensure a stress-free purchase.', 
-        bullets: [
-            'It has order customization options to adapt to customer preferences.',
-            'Mobile optimization for a seamless shopping experience on any screen size.',
-            'Customer opinion section with ratings, offering the user a more informed purchase.',
-            'It has filtering by product category. streamlining the purchasing process.',
+        pageDesc:'Development of a landing page for a store specialized in the sale of focaccias. By combining a user-centric design with intuitive features, creating a smooth and efficient food ordering experience ensuring a stress-free purchase.', 
+        features: [
+            {
+                title: 'Sleek and Modern Design:',
+                text: 'The landing page adopts a clean, modern aesthetic, showcasing the beautiful textures and colors of focaccia. High-quality images and a minimalist layout create a visually appealing experience, reflecting the artisanal nature of the product.',
+            },
+            {
+                title: 'Easy Navigation and Filtering:',
+                text: 'The landing page employs a clear, structured layout and intuitive filtering options. Visitors can easily navigate through the categories of focaccia, finding their desired flavor and toppings effortlessly.',
+            },
+            {
+                title: 'Responsive and Adaptive:',
+                text: 'The landing page is designed to be responsive and adaptive to all devices. This ensures that it can be used on any device and any screen size.',
+            },
+            {
+                title: 'Honest Customer Feedback:',
+                text: 'A dedicated section features user reviews and ratings, providing potential customers with valuable insights and building trust.',
+            },
         ],
         imgOne: P41, 
         imgTwo: P42, 

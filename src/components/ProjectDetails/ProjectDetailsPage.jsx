@@ -60,17 +60,19 @@ const ProjectDetailsPage = () => {
                     <h2 className='text-6xl italic font-space font-extrabold text-center'>Product Overview</h2>
                     <div className='mt-6 w-full h-[3px] bg-lime-400'></div>
                     
-                    <div className='flex flex-row gap-10 p-10'>
-                        <div className='p-4 text-xl font-semibold'>
-                            <p>Overview:</p>
+                    <div className='flex flex-col justify-center gap-2 p-10'>
+                        <div className='flex p-4 text-xl'>
+                            <h3 className='font-semibold'>Overview:</h3>
+                            <p className='ml-4'>These are some of the notable features that were designed and developed to provide innovative tailored solutions.</p>
                         </div>
-                        <div className='flex flex-col gap-4 text-xl p-4'>
-                            <p>These are some of the notable features that were designed and developed by the team to provide innovative solutions.</p>
-                            <ul className='list-decimal ml-5'>
-                                {project.bullets.map((bullet, index) => (
-                                    <li key={index} className='mb-2'>{bullet}</li>
-                                ))}
-                            </ul>
+                        
+                        <div className='flex flex-col p-4 gap-4'>
+                            {project.features.map((feature, index) => (
+                                <div key={index} className='mb-2'>
+                                    <span className='text-xl font-semibold'>{feature.title}</span>
+                                    <p className='text-lg mt-2 ml-10'>{feature.text}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className='flex flex-row gap-10 p-10'>

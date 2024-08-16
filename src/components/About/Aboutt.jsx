@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import PROFILE from '../../assets/profilee.webp';
+import PROFILE from '../../assets/profile.webp';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
@@ -53,7 +53,7 @@ const Aboutt = () => {
                 width={"100%"}
                 height={"auto"}
                 loading="lazy"
-                className='hidden object-cover object-center rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden'
+                className='hidden object-cover object-center grayscale-[30%] rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden'
                 alt="profile" />
             </motion.div>
 
