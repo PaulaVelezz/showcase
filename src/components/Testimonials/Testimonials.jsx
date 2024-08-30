@@ -3,24 +3,24 @@ import React, { useState } from 'react';
 const testimonial = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Coworker 1",
     position: "Frontend Developer",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
-    desc: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio sit ipsam. Nisi sequi maxime autem inventore, perspiciatis, facilis voluptatem odit in blanditiis, ea culpa vel ut ullam unde. Hic!", 
+    desc: "I'm currently building this section. Soon I will be adding the testimonials.", 
   },
   {
     id: 2,
-    name: "Jane Doe",
+    name: "Coworker 2",
     position: "Backend Developer",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
-    desc: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio sit ipsam. Nisi sequi maxime autem inventore, perspiciatis, facilis voluptatem odit in blanditiis, ea culpa vel ut ullam unde. Hic",
+    desc: "I'm currently building this section. Soon I will be adding the testimonials.",
   },
   {
     id: 3,
-    name: "Bob Smith",
-    position: "Fullstack Developer",
+    name: "Coworker 3",
+    position: "UX/UI Designer",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
-    desc: "tlorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio sit ipsam. Nisi sequi maxime autem inventore, perspiciatis, facilis voluptatem odit in blanditiis, ea culpa vel ut ullam unde. Hic",
+    desc: "I'm currently building this section. Soon I will be adding the testimonials.",
   },
 ];
 
@@ -39,15 +39,16 @@ const Testimonials = () => {
 
   return (
     <section className='flex flex-col justify-center items-center h-screen'>
-      <h1 className='mb-14 text-7xl font-extrabold tracking-wider font-T1Korium text-zinc-950'>Testimonials</h1>
+      <h1 className='mb-4 text-7xl font-extrabold tracking-wider font-T1Korium text-zinc-950'>Testimonials from Coworkers</h1>
+      <p className='mb-6 font-semibold text-xl'>Here are a few kind words people say about my work and collaborations</p>
 
       <figure key={currentTestimonial.id} className='bg-[#6d28d9] text-left font-medium text-stone-100 rounded-2xl p-12 max-w-4xl'>
         <blockquote>
-          <h4 className='text-3xl'>&quot;{currentTestimonial.desc}&quot;</h4>
+          <h4 className='text-2xl'>&quot;{currentTestimonial.desc}&quot;</h4>
         </blockquote>
 
         <figcaption className='flex flex-row justify-between items-center mt-5'>    
-          <div className='text-zinc-950 text-lg flex items-center gap-6'>
+          <div className='text-zinc-950 text-base flex items-center gap-6'>
             <img src={currentTestimonial.image} className='h-[100px] w-[100px] rounded-full border-2 border-lime-500' alt="user" />
             <div className=''>
               <h3>{currentTestimonial.name}</h3>

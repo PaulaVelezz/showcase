@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../Navbar/Navbar';
-import ResumeEN from '/(ENG)_CV_ Paula Velez_Frontend Developer.pdf';
-import ResumeES from '/(ENG)_CV_ Paula Velez_Frontend Developer.pdf';
+import ResumeEN from '/CV_Paula_Velez_ Frontend_Developer_(ENG).pdf';
+import ResumeES from '/CV_Paula_Velez_ Desarrollador_Frontend_(ESP).pdf';
 import { Link } from 'react-router-dom';
 import InitialAnimation from '../../helpers/InitialAnimation.jsx';
 import Spline from '@splinetool/react-spline';
