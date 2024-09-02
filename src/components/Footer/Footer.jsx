@@ -3,8 +3,8 @@ import { TbArrowBigUpLinesFilled } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className= 'bg-zinc-950 text-sm text-stone-200 font-semibold flex flex-row items-center justify-between w-full py-5 px-4 border-t-2 border-zinc-800'>
-      <div>
+    <div className= 'bg-zinc-950 text-sm text-stone-200 font-semibold flex flex-col sm:flex-row items-center gap-5 justify-between w-full py-10 px-4 border-t-2 border-zinc-800'>
+      <div className=''>
         <p>Designed and Developed by Paula Velez &#169; 2024 </p>
       </div>
       <div>

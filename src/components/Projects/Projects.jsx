@@ -8,6 +8,7 @@ import IMG4 from '../../assets/04.webp';
 import IMG5 from '../../assets/05.webp';
 import IMG6 from '../../assets/06.webp';
 import IMG7 from '../../assets/07.webp';
+import { TbArrowBigDownLine } from "react-icons/tb";
 
 const Projects = () => {
     let ShowRef = useRef(null);
@@ -44,8 +45,8 @@ const Projects = () => {
   return (
     <section id='works' className={styles.showcase} ref={(el) => (ShowRef = el)}>
         <div className={styles.ourWorkTxt} ref={(el) => (SelectedWorkRef = el)}>
-            <h1 className={styles.selected} ref={(el) => (SelectRef = el)}>Selected</h1>
-            <h1 className={styles.work} ref={(el) => (OurWork = el)}>Works</h1>
+            <h1 className={styles.selected} ref={(el) => (SelectRef = el)}>Portfolio</h1>
+            <h1 className={styles.work} ref={(el) => (OurWork = el)}>Showcase</h1>
         </div>
         <div className={styles.ourWorkTxtDiv} ref={(el) => (OurTextRef = el)}>
             <div className={styles.scrollWork}>
@@ -61,7 +62,11 @@ const Projects = () => {
             </div>
         </div>
         <div className={styles.demo} ref={(el) => (DemoRef = el)}>
-          <span className='animate-bounce'>&#8595; keep scrolling for more &#8595;</span>
+          <button className='border border-stone-100 text-sm flex flex-row items-center justify-center gap-2 px-5 py-2 rounded-xl font-medium'>
+            <TbArrowBigDownLine className='animate-bounce mt-2' /> 
+            Scroll More
+            <TbArrowBigDownLine className='animate-bounce mt-2' /> 
+          </button>
         </div>
   </section>
 );

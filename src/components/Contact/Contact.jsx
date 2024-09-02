@@ -9,13 +9,13 @@ const Contact = () => {
     const text = "I'd love to hear from you and explore collaboration, answer your questions or discuss a new project.".split(" ");
 
   return (
-    <section id='contact' className='flex flex-col w-full h-screen justify-center items-center gap-10 p-4 bg-zinc-950 rounded-t-2xl'>
+    <section id='contact' className='flex flex-col w-full justify-center items-center gap-10 p-4 bg-zinc-950 rounded-t-2xl'>
         <h1 className='text-7xl font-extrabold tracking-wider font-T1Korium text-stone-100'>Let's get in touch!</h1>
         <div className='flex gap-1'>
             {text.map((word, index) => (
                 <motion.p
                     key={index}
-                    className='text-stone-100 text-2xl'
+                    className='text-stone-100 text-xl md:text-2xl lg:text-2xl'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.25, delay: index / 10, }}

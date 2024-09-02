@@ -85,6 +85,8 @@ const ProjectDetailsPage = () => {
                             ))}
                         </div>
                     </div>
+
+                    {/* agregar botón que redireccione al github del proyecto */}
                 </div>
 
                 <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>

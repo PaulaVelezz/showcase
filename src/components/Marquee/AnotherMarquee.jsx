@@ -5,10 +5,9 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Texto = ({ src }) => {
     return (
-        <div className='flex gap-5 p-2 items-center'>
-            <p className='text-[7.3vh] font-semibold ml-1 tracking-wide'>Showcase</p>
-            <span className='relative h-[7.3vh] w-[5vw] rounded-md overflow-hidden'> 
-                <img className='object-cover' src={src} alt="marquee image" />
+        <div className='flex gap-5 p-3 items-center'>
+            <span className='relative h-24 w-30 rounded-md overflow-hidden'> 
+                <img className='h-full w-full object-cover' src={src} alt="marquee image" />
             </span>
         </div>
     );
@@ -20,6 +19,10 @@ const Slider = ({ src, left, progress, direction }) => {
 
     return (
         <motion.div style={{ left, x }} className='relative flex white-space-nowrap'>
+            <Texto src={src} />
+            <Texto src={src} />
+            <Texto src={src} />
+            <Texto src={src} />
             <Texto src={src} />
             <Texto src={src} />
             <Texto src={src} />

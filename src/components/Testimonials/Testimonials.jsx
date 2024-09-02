@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BiSolidRightArrow, BiSolidLeftArrow } from "react-icons/bi";
 
 const testimonial = [
   {
@@ -38,7 +39,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonial[cardCurrentIndex];
 
   return (
-    <section className='flex flex-col justify-center items-center h-screen'>
+    <section className='flex flex-col justify-center items-center h-[100vh] px-6 mt-8 mb-8'>
       <h1 className='mb-4 text-7xl font-extrabold tracking-wider font-T1Korium text-zinc-950'>Testimonials from Coworkers</h1>
       <p className='mb-6 font-semibold text-xl'>Here are a few kind words people say about my work and collaborations</p>
 
@@ -57,8 +58,12 @@ const Testimonials = () => {
           </div>
             
           <div className='flex flex-row gap-4 mt-5'>
-            <button className='h-14 w-14 rounded-full bg-zinc-950 border-2 border-lime-400' onClick={handlePrevious} disabled={cardCurrentIndex === 0}>👈</button>
-            <button className='h-14 w-14 rounded-full bg-zinc-950 border-2 border-lime-400' onClick={handleNext} disabled={cardCurrentIndex === testimonial.length - 1}>👉</button>
+            <button className='h-14 w-14 flex justify-center items-center rounded-full bg-zinc-950 border-2 border-lime-400 hover:bg-zinc-800' onClick={handlePrevious} disabled={cardCurrentIndex === 0}>
+              <BiSolidLeftArrow className='text-lime-400 text-xl'/>
+            </button>
+            <button className='h-14 w-14 flex justify-center items-center rounded-full bg-zinc-950 border-2 border-lime-400 hover:bg-zinc-800' onClick={handleNext} disabled={cardCurrentIndex === testimonial.length - 1}>
+              <BiSolidRightArrow className='text-lime-400 text-xl'/>
+            </button>
           </div>
         </figcaption>
       </figure>

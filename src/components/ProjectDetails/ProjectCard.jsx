@@ -36,7 +36,10 @@ const ProjectCard = ({ title, categories, desc, tags, img }) => {
                     </div>
 
                     <div className='flex w-full justify-center text-lg font-semibold rounded-md text-stone-100 bg-violet-800 border border-violet-800 p-2 cursor-pointer hover:bg-violet-900'>
-                        <Link to={`/project/${title}`}> full project </Link>
+                        <Link to={`/project/${title}`} className='flex items-center gap-2'> 
+                            Learn more 
+                            <svg stroke="currentColor" color="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 17 17 7"></path><path d="M7 7 17 7 17 17"></path></svg>
+                        </Link>
                     </div>
                 </div>
             </div>

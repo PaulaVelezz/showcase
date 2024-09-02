@@ -8,7 +8,7 @@ const Contact = lazy(() => import ('../components/Contact/Contact'));
 const Footer = lazy(() => import ('../components/Footer/Footer'));
 const Services = lazy(() => import ('../components/Services/Services'));
 const Marquee = lazy(() => import ('../components/Marquee/Marquee'));
-const AnotherMarquee = lazy(() => import ('../components/Marquee/AnotherMarquee'));
+// const AnotherMarquee = lazy(() => import ('../components/Marquee/AnotherMarquee'));
 const Certifications = lazy(() => import ('../components/Certifications/Certifications'));
 import Testimonials from '../components/Testimonials/Testimonials.jsx';
 
@@ -21,7 +21,7 @@ const MainLayout = () => {
       <Services />
       <Marquee />
       <Projects />
-      <AnotherMarquee />
+      {/* <AnotherMarquee /> */}
       <ProjectDetails />
       <Certifications />
       <Testimonials />

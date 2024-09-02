@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import PROFILE from '../../assets/profile.webp';
+import PROFILE from '../../assets/profile1.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
@@ -53,7 +53,7 @@ const Aboutt = () => {
                 width={"100%"}
                 height={"auto"}
                 loading="lazy"
-                className='hidden object-cover object-center grayscale-[30%] rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden'
+                className='hidden object-cover bg-lime-400 object-center rounded-lg border-2 border-violet-700 md:w-64 md:h-auto md:block sm:hidden'
                 alt="profile" />
             </motion.div>
 
@@ -61,15 +61,18 @@ const Aboutt = () => {
                 <div className='w-full font-space pl-4 pr-9'>
                     <h1 ref={header} className='text-6xl font-extrabold mb-4 font-T1Korium'>About</h1>
                     <p className='translate-y-10 text-body-1 2xl:text-4xl' ref={aboutBody}>
-                        Hi there! &#128075;&#127996; Nice to meet you! I'm Paula, and I'm a frontend developer based in Argentina &#127758;. I'm passionate about transforming ideas into visually captivating digital experiences or effective solutions. And to achieve that a calm mindset, a collaborative approach, and effective communication are key to my process.
+                        Hi there! &#128075;&#127996; Nice to meet you! I&#39;m Paula, and I&#39;m a frontend developer based in Argentina &#127758;. I&#39;m passionate about transforming concepts or ideas into reality, by crafting visually engaging and effective web solutions.
                         <br></br>
                         <br></br>
-                        I enjoy working closely with clients, designers, and developers to ensure that every project is a harmonious blend of creativity and functionality. 
-                        <br></br> &#129308;&#127996;
-                        💫&#129307;&#127996;
+                        I believe that encouraging a calm and collaborative approach, and ensuring clear communication are key throughout the development process.
                         <br></br>
                         <br></br>
-                        Right now, I'm open to job opportunities for both remote and non-remote positions where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience feel free to contact me.
+                        I thrive working collaborative with clients, designers, and developers to ensure that every project is a harmonious blend of creativity and functionality.
+                        &#129308;&#127996;
+                        ✨&#129307;&#127996;
+                        <br></br>
+                        <br></br>
+                        I&#39;m currently open to job opportunities, both remote and non-remote, where I can contribute, learn, and grow. If you have an exciting opportunity that aligns with my skills and experience, I&#39;d love to hear from you!
                         <br></br>
                         <br></br>
                     </p>
