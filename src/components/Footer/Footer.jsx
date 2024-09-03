@@ -1,5 +1,5 @@
 import React from 'react';
-import { TbArrowBigUpLinesFilled } from "react-icons/tb";
+import { TbArrowBigUpLine } from "react-icons/tb";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         <p>Thanks for visiting 👋 </p>
       </div>
       <div className='flex items-center py-1 px-4 text-base border border-zinc-800 rounded-full'>
-        <a className='flex justify-center items-center gap-2' href="#home">Back to the top <TbArrowBigUpLinesFilled className='animate-bounce' /></a>
+        <a className='flex justify-center items-center gap-2' href="#home">Back to the top <TbArrowBigUpLine className='animate-bounce' /></a>
       </div>
     </div>
   )

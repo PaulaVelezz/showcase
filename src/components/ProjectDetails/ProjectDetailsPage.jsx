@@ -86,7 +86,9 @@ const ProjectDetailsPage = () => {
                         </div>
                     </div>
 
-                    {/* agregar botón que redireccione al github del proyecto */}
+                    <button className='ml-10 border border-zinc-600 text-base rounded-xl py-2 px-6 font-normal cursor-pointer hover:bg-lime-400'>
+                        <a href={project.URL} target="_blank">Visit the site</a>
+                    </button>
                 </div>
 
                 <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>
@@ -94,29 +96,38 @@ const ProjectDetailsPage = () => {
                         <HorizontalGallery project={project} />
                     </Suspense>
                 </div>
+                
+                <div className='mt-6 w-full h-[3px] bg-lime-400'></div>
 
-                <div className='w-full h-32 justify-between items-center flex mb-4 mt-4 p-6'>
+                
+                <div className='w-full h-48 justify-between items-center flex p-6 mb-6'>
                     {currentProjectIndex !== null && (
-                        <button 
+                       <div  
                             onClick={handlePrevProject}
                             disabled={currentProjectIndex === 0}
-                            className='border border-zinc-600 text-base rounded-xl py-2 px-6 font-normal cursor-pointer hover:bg-lime-400'
+                            className='cursor-pointer text-left'
                         >
-                            PREVIOUS CASE
-                        </button>   
+                            <span className='text-violet-700 font-bold'>
+                                PREVIOUS CASE
+                            </span> 
+                            <h2 className='md:text-2xl font-bold'>{project.title}</h2> 
+                        </div>
                     )}
 
                     <span>
-                    <Link to='/' className='text-base font-normal cursor-pointer hover:underline'>Back to home</Link>
+                        <Link to='/' className='text-base font-bold text-zinc-800 cursor-pointer'>BACK TO HOME</Link>
                     </span>
 
                     {currentProjectIndex !== null && currentProjectIndex < projects.length - 1 && (
-                        <button
-                            onClick={handleNextProject}
-                            className='border border-zinc-600 text-base rounded-xl py-2 px-7 font-normal cursor-pointer hover:bg-lime-400'
-                        >
+                    <div 
+                        onClick={handleNextProject}
+                        className='cursor-pointer text-right'
+                    >
+                        <span className='text-violet-700 font-bold'>
                            NEXT CASE
-                        </button>
+                        </span>
+                        <h2 className='md:text-2xl font-bold'> {projects[currentProjectIndex + 1].title}</h2>
+                    </div>
                     )}
                 </div>
             </section> 

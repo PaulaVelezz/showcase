@@ -60,6 +60,7 @@ const projects = [
         imgTwo: P52, 
         imgThree: P53, 
         imgFour: P54,
+        URL: 'https://github.com/PaulaVelezz/Saas_site',
     },
     {
         id: 1,
@@ -92,6 +93,7 @@ const projects = [
         imgTwo: P12, 
         imgThree: P13, 
         imgFour: P14,
+        URL: 'https://github.com/No-Country/s13-03-m-node-react',
     },
     {
         id: 2,
@@ -124,6 +126,7 @@ const projects = [
         imgTwo: P22, 
         imgThree: P23, 
         imgFour: P24,
+        URL: 'https://github.com/PaulaVelezz/s11-10-m-java-next',
     },
     {
         id: 3,
@@ -156,6 +159,7 @@ const projects = [
         imgTwo: P32, 
         imgThree: P33, 
         imgFour: P34,
+        URL: 'https://github.com/PaulaVelezz/c13-19-m-java-react-front',
     },
     {
         id: 4,
@@ -188,6 +192,7 @@ const projects = [
         imgTwo: P42, 
         imgThree: P43, 
         imgFour: P44,
+        URL: 'https://github.com/PaulaVelezz/Integrador-JavaScript-NUCBA',
     },
     // {
     //     id: 5,
