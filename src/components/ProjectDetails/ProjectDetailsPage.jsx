@@ -4,6 +4,9 @@ import Navbar from '../Navbar/Navbar';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import projects from '../ProjectDetails/data.js';
+import { FaGithubSquare } from "react-icons/fa";
+
+
 const HorizontalGallery  =  lazy(() => import('./HorizontalGallery.jsx'));
 
 const ProjectDetailsPage = () => {
@@ -59,35 +62,39 @@ const ProjectDetailsPage = () => {
                 <div className='w-full mt-6'>
                     <h2 className='text-6xl italic font-space font-extrabold text-center'>Product Overview</h2>
                     <div className='mt-6 w-full h-[3px] bg-lime-400'></div>
-                    
-                    <div className='flex flex-col justify-center gap-2 p-10'>
-                        <div className='flex p-4 text-xl'>
-                            <h3 className='font-semibold'>Overview:</h3>
-                            <p className='ml-4'>These are some of the notable features that were designed and developed to provide innovative tailored solutions.</p>
+
+                   <div className='border border-dashed border-zinc-800 rounded-2xl m-4 p-4'> 
+                        <div className='flex flex-col justify-center gap-2 p-6'>
+                            <div className='flex p-4 text-xl'>
+                                <h3 className='font-semibold'>Overview:</h3>
+                                <p className='ml-4'>These are some of the notable features that were designed and developed to provide innovative tailored solutions.</p>
+                            </div>
+                            
+                            <div className='flex flex-col p-4 gap-4'>
+                                {project.features.map((feature, index) => (
+                                    <div key={index} className='mb-2'>
+                                        <span className='text-xl font-semibold'>{feature.title}</span>
+                                        <p className='text-lg mt-2 ml-10'>{feature.text}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        
-                        <div className='flex flex-col p-4 gap-4'>
-                            {project.features.map((feature, index) => (
-                                <div key={index} className='mb-2'>
-                                    <span className='text-xl font-semibold'>{feature.title}</span>
-                                    <p className='text-lg mt-2 ml-10'>{feature.text}</p>
-                                </div>
-                            ))}
+                        <div className='flex flex-row gap-10 ml-10'>
+                            <div className='p-4 text-xl font-semibold'>
+                                <p>Stack:</p>
+                            </div>
+                            <div className='flex flex-row gap-4 text-xl p-4'>
+                                {project.tags.map ((tag, index) => (
+                                    <span key={index} className='inline-flex px-3 py-1 text-sm font-light rounded-md bg-zinc-900 text-stone-100'>{tag}</span>
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                    <button className='ml-10 border border-zinc-600 text-base rounded-xl py-2 px-6 font-normal cursor-pointer hover:bg-lime-400'>
-                        <a href={project.URL} target="_blank">Visit the site</a>
-                    </button>
-                    <div className='flex flex-row gap-10 p-10'>
-                        <div className='p-4 text-xl font-semibold'>
-                            <p>Stack:</p>
+                        <div className='flex justify-center mt-10'>
+                            <button className='border border-dashed border-zinc-800 rounded-xl py-2 px-6 font-medium text-base cursor-pointer hover:bg-lime-400'>
+                                <a href={project.URL} target="_blank" className='flex flex-row gap-3 justify-center items-center'><FaGithubSquare /> Github Repository</a>
+                            </button>
                         </div>
-                        <div className='flex flex-row gap-4 text-xl p-4'>
-                            {project.tags.map ((tag, index) => (
-                                <span key={index} className='inline-flex px-3 py-1 text-sm font-light rounded-md bg-zinc-900 text-stone-100'>{tag}</span>
-                            ))}
-                        </div>
-                    </div>
+                    </div> 
                 </div>
 
                 <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>

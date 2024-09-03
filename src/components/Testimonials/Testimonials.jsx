@@ -33,7 +33,7 @@ const Testimonials = () => {
   return (
     <section className='flex flex-col justify-center px-6 mt-16 mb-16'>
       <h1 className='mb-4 text-7xl font-extrabold tracking-wider font-T1Korium text-zinc-950'>Testimonials</h1>
-      <p className='mb-6 font-semibold text-xl'>Here are a few kind words people say about my work and collaborations</p>
+      <p className='mb-6 font-semibold text-xl'>Here are a few kind words people say about our collaborations.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
         {testimonial.map((testimonialItem, index) => (

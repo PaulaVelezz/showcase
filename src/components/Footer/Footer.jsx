@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Designed and Developed by Paula Velez &#169; 2024 </p>
       </div>
       <div>
-        <p>Thanks for visiting 👋 </p>
+        <p>Thanks for your visit 👋</p>
       </div>
       <div className='flex items-center py-1 px-4 text-base border border-zinc-800 rounded-full'>
         <a className='flex justify-center items-center gap-2' href="#home">Back to the top <TbArrowBigUpLine className='animate-bounce' /></a>
