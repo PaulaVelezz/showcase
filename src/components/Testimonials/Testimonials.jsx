@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BiSolidRightArrow, BiSolidLeftArrow } from "react-icons/bi";
+import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 
 const testimonial = [
   {
@@ -8,6 +8,7 @@ const testimonial = [
     position: "Frontend Developer",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     desc: "I'm currently building this section. Soon I will be adding the testimonials.", 
+    linkedIn: "https://www.linkedin.com/",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const testimonial = [
     position: "Backend Developer",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
     desc: "I'm currently building this section. Soon I will be adding the testimonials.",
+    linkedIn: "https://www.linkedin.com/",
   },
   {
     id: 3,
@@ -22,51 +24,39 @@ const testimonial = [
     position: "UX/UI Designer",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
     desc: "I'm currently building this section. Soon I will be adding the testimonials.",
+    linkedIn: "https://www.linkedin.com/",
   },
 ];
 
 const Testimonials = () => {
-  const [cardCurrentIndex , setCardCurrentIndex] = useState(0);
-
-  const handleNext = () => {
-    setCardCurrentIndex((cardCurrentIndex + 1) % testimonial.length);
-  };
-
-  const handlePrevious = () => {
-    setCardCurrentIndex((cardCurrentIndex - 1 + testimonial.length) % testimonial.length);
-  };
-
-  const currentTestimonial = testimonial[cardCurrentIndex];
 
   return (
-    <section className='flex flex-col justify-center items-center h-[100vh] px-6 mt-8 mb-8'>
-      <h1 className='mb-4 text-7xl font-extrabold tracking-wider font-T1Korium text-zinc-950'>Testimonials from Coworkers</h1>
+    <section className='flex flex-col justify-center px-6 mt-16 mb-16'>
+      <h1 className='mb-4 text-7xl font-extrabold tracking-wider font-T1Korium text-zinc-950'>Testimonials</h1>
       <p className='mb-6 font-semibold text-xl'>Here are a few kind words people say about my work and collaborations</p>
 
-      <figure key={currentTestimonial.id} className='bg-[#6d28d9] text-left font-medium text-stone-100 rounded-2xl p-12 max-w-4xl'>
-        <blockquote>
-          <h4 className='text-2xl'>&quot;{currentTestimonial.desc}&quot;</h4>
-        </blockquote>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        {testimonial.map((testimonialItem, index) => (
+          <figure key={index} className='border border-b-[7px] rounded-2xl border-violet-700 max-w-md p-6'>
+            <figcaption className='grid grid-cols-4 gap-4 place-items-center p-4'>    
+                <img className='rounded-2xl border border-r-[6px] border-b-[6px] border-violet-700' src={testimonialItem.image} alt="coworker" />
+                <div className='col-span-2 text-left'>
+                  <h3 className='text-lg font-semibold'>{testimonialItem.name}</h3>
+                  <p className='text-base font-medium text-zinc-700'>{testimonialItem.position}</p>
+                </div>
+                <div className="text-2xl hover:text-lime-600">
+                  <a href={testimonialItem.linkedIn}><FaLinkedin /> </a>
+                </div>
+            </figcaption>
 
-        <figcaption className='flex flex-row justify-between items-center mt-5'>    
-          <div className='text-zinc-950 text-base flex items-center gap-6'>
-            <img src={currentTestimonial.image} className='h-[100px] w-[100px] rounded-full border-2 border-lime-500' alt="user" />
-            <div className=''>
-              <h3>{currentTestimonial.name}</h3>
-              <span>{currentTestimonial.position}</span>
-            </div>
-          </div>
-            
-          <div className='flex flex-row gap-4 mt-5'>
-            <button className='h-14 w-14 flex justify-center items-center rounded-full bg-zinc-950 border-2 border-lime-400 hover:bg-zinc-800' onClick={handlePrevious} disabled={cardCurrentIndex === 0}>
-              <BiSolidLeftArrow className='text-lime-400 text-xl'/>
-            </button>
-            <button className='h-14 w-14 flex justify-center items-center rounded-full bg-zinc-950 border-2 border-lime-400 hover:bg-zinc-800' onClick={handleNext} disabled={cardCurrentIndex === testimonial.length - 1}>
-              <BiSolidRightArrow className='text-lime-400 text-xl'/>
-            </button>
-          </div>
-        </figcaption>
-      </figure>
+            <div className='bg-lime-500 h-[2px]'></div>
+
+            <blockquote className='text-sm pt-4'>
+              <p>{testimonialItem.desc}</p>
+            </blockquote>
+          </figure>
+        ))}
+      </div>
     </section>
   );
 };

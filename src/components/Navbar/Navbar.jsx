@@ -24,7 +24,7 @@ const Navbar = () => {
 
             <div className="md:hidden">
                 <button onClick={toggleMenu}>
-                    {open ? '✖️CLOSE' : '➖MENU' }
+                    {open ? 'CLOSE' : 'MENU' }
                 </button>
             </div>
 

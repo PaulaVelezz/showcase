@@ -10,7 +10,7 @@ const ProjectDetails = () => {
 
   return (
     <section ref={ProjectRef} className='relative'>
-      <div className='sticky top-0 left-0 flex flex-col items-center justify-center text-center text-zinc-950 mt-10 pt-3 bg-slate-300 backdrop:filter backdrop-blur-md bg-opacity-10 rounded-md'>
+      <div className='sticky top-0 left-0 flex flex-col items-center justify-center text-center text-zinc-950 mt-10 pt-3 bg-[#f5f5f4bd] backdrop:filter backdrop-blur-sm rounded-md'>
         <h1 className='text-6xl font-extrabold font-T1Korium tracking-wider'>Projects</h1>
         <motion.div style={{ scaleX }} className='w-[95%] h-[2px] bg-violet-700 rounded-sm mt-3'></motion.div>
       </div>

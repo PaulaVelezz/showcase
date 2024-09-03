@@ -75,6 +75,9 @@ const ProjectDetailsPage = () => {
                             ))}
                         </div>
                     </div>
+                    <button className='ml-10 border border-zinc-600 text-base rounded-xl py-2 px-6 font-normal cursor-pointer hover:bg-lime-400'>
+                        <a href={project.URL} target="_blank">Visit the site</a>
+                    </button>
                     <div className='flex flex-row gap-10 p-10'>
                         <div className='p-4 text-xl font-semibold'>
                             <p>Stack:</p>
@@ -85,10 +88,6 @@ const ProjectDetailsPage = () => {
                             ))}
                         </div>
                     </div>
-
-                    <button className='ml-10 border border-zinc-600 text-base rounded-xl py-2 px-6 font-normal cursor-pointer hover:bg-lime-400'>
-                        <a href={project.URL} target="_blank">Visit the site</a>
-                    </button>
                 </div>
 
                 <div className='w-full bg-stone-950 rounded-2xl p-5 mt-5'>
@@ -115,7 +114,7 @@ const ProjectDetailsPage = () => {
                     )}
 
                     <span>
-                        <Link to='/' className='text-base font-bold text-zinc-800 cursor-pointer'>BACK TO HOME</Link>
+                        <Link to='/' className='text-base font-bold text-zinc-700 cursor-pointer hover:text-zinc-950'>BACK TO HOME</Link>
                     </span>
 
                     {currentProjectIndex !== null && currentProjectIndex < projects.length - 1 && (
