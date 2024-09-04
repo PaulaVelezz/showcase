@@ -15,7 +15,7 @@ const ProjectDetails = () => {
         <motion.div style={{ scaleX }} className='w-[95%] h-[2px] bg-violet-700 rounded-sm mt-3'></motion.div>
       </div>
      
-      <div id='project-details' className='mt-4 mb-4 p-16 gap-16 flex flex-col'>
+      <div id='project-details' className='mt-4 mb-4 p-12 gap-16 flex flex-col'>
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

@@ -56,18 +56,18 @@ const ProjectDetailsPage = () => {
                     </div>
                 
                     <div className='mt-2 w-full h-[3px] bg-lime-400'></div>
-                    <p className='text-xl p-10 tracking-wide'>{project.pageDesc}</p>
+                    <p className='md:text-xl text-lg p-10 tracking-wide'>{project.pageDesc}</p>
                 </div>
 
                 <div className='w-full mt-6'>
-                    <h2 className='text-6xl italic font-space font-extrabold text-center'>Product Overview</h2>
+                    <h2 className='md:text-6xl text-5xl italic font-space font-extrabold text-center'>Product Overview</h2>
                     <div className='mt-6 w-full h-[3px] bg-lime-400'></div>
 
                    <div className='border border-dashed border-zinc-800 rounded-2xl m-4 p-4'> 
                         <div className='flex flex-col justify-center gap-2 p-6'>
-                            <div className='flex p-4 text-xl'>
-                                <h3 className='font-semibold'>Overview:</h3>
-                                <p className='ml-4'>These are some of the notable features that were designed and developed to provide innovative tailored solutions.</p>
+                            <div className='flex flex-col p-4 text-xl'>
+                                <h3 className='font-semibold mb-2'>Overview:</h3>
+                                <p className='ml-4 md:text-xl text-lg'>These are some of the notable features that were designed and developed to provide innovative tailored solutions.</p>
                             </div>
                             
                             <div className='flex flex-col p-4 gap-4'>
@@ -79,7 +79,7 @@ const ProjectDetailsPage = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className='flex flex-row gap-10 ml-10'>
+                        <div className='flex md:flex-row flex-col md:gap-10 gap-1 ml-10'>
                             <div className='p-4 text-xl font-semibold'>
                                 <p>Stack:</p>
                             </div>

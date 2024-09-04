@@ -9,8 +9,8 @@ const Contact = () => {
     const text = "I'd love to hear from you and explore collaboration, answer your questions or discuss a new project.".split(" ");
 
   return (
-    <section id='contact' className='flex flex-col w-full justify-center items-center gap-10 p-4 bg-zinc-950 rounded-t-2xl'>
-        <h1 className='text-7xl font-extrabold tracking-wider font-T1Korium text-stone-100'>Let's get in touch!</h1>
+    <section id='contact' className='flex flex-col w-full justify-center items-center gap-10 p-10 bg-zinc-950 rounded-t-2xl'>
+        <h1 className='md:text-7xl text-6xl font-extrabold tracking-wider font-T1Korium text-stone-100'>Let's get in touch!</h1>
         <div className='flex gap-1 flex-wrap lg:flex-nowrap'>
             {text.map((word, index) => (
                 <motion.p
@@ -30,7 +30,7 @@ const Contact = () => {
             <span className='bg-violet-700 h-[2px] overflow-hidden relative w-full'></span>
         </div>
 
-        <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4'>
             <div className='items-center flex flex-row md:flex-col lg:flex-col justify-between p-4 w-52 sm:h-fit md:h-48 lg:h-48 rounded-xl border border-violet-700 hover:bg-violet-700'>
                 <div className='place-items-start text-3xl w-full'>
                     <IoCalendarNumberOutline style={{color: '#f7f7f7'}} />

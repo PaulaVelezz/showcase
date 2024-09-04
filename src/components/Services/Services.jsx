@@ -61,7 +61,7 @@ const Services = () => {
 
   return (
     <section id='services' className='bg-zinc-950 rounded-t-2xl p-10'>
-        <h1 className='mb-20 text-7xl font-extrabold tracking-wide font-T1Korium text-stone-200'>Services</h1>
+        <h1 className='mb-20 md:text-7xl text-6xl font-extrabold tracking-wide font-T1Korium text-stone-200'>Services</h1>
         <div id='container' className='flex justify-center'>
             <div id='cards' className='lg:w-[90%] md:w-[90%] w-[90%]'>
                 {servicesData.map(({ img, title, desc }, index) => (
