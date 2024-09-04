@@ -62,7 +62,7 @@ const Projects = () => {
             </div>
         </div>
         <div className={styles.demo} ref={(el) => (DemoRef = el)}>
-          <button className='border border-stone-100 text-sm flex flex-row items-center justify-center gap-2 px-5 py-2 rounded-xl font-medium'>
+          <button className='border border-dashed border-zinc-400 text-sm flex flex-row items-center justify-center gap-2 px-5 py-2 rounded-xl font-medium'>
             <TbArrowBigDownLine className='animate-bounce mt-2' /> 
             Scroll More
             <TbArrowBigDownLine className='animate-bounce mt-2' /> 

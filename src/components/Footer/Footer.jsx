@@ -10,7 +10,7 @@ const Footer = () => {
       <div>
         <p>Thanks for your visit 👋</p>
       </div>
-      <div className='flex items-center py-1 px-4 text-base border border-zinc-800 rounded-full'>
+      <div className='flex items-center py-1 px-4 text-base border border-dashed border-zinc-400 rounded-xl'>
         <a className='flex justify-center items-center gap-2' href="#home">Back to the top <TbArrowBigUpLine className='animate-bounce' /></a>
       </div>
     </div>

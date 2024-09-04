@@ -23,7 +23,7 @@ const ProjectDetailsPage = () => {
     }, [title]);
 
     if (!project) {
-        return <div>Loading...</div>;
+        return <div className='w-full flex items-center justify-center h-screen text-zinc-100 bg-zinc-950'> <span className='text-4xl font-extrabold tracking-wider font-space text-stone-100'>Loading...</span></div>
     }
 
     const handleNextProject = () => {
