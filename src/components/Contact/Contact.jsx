@@ -30,7 +30,7 @@ const Contact = () => {
             <span className='bg-violet-700 h-[2px] overflow-hidden relative w-full'></span>
         </div>
 
-        <div className='grid grid-cols-2 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='flex flex-wrap gap-5 justify-center items-center'>
             <div className='items-center flex flex-row md:flex-col lg:flex-col justify-between p-4 w-52 sm:h-fit md:h-48 lg:h-48 rounded-xl border border-violet-700 hover:bg-violet-700'>
                 <div className='place-items-start text-3xl w-full'>
                     <IoCalendarNumberOutline style={{color: '#f7f7f7'}} />
