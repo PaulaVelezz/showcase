@@ -58,17 +58,17 @@ const Contact = () => {
        transition={{ duration: 0.5, ease: 'easeInOut' }}
        className="container px-6 py-12 mx-auto"
        >
-        <div>
+        <div className='md:w-3/5'>
           <p className="font-medium text-lime-500 dark:text-lime-400">Contact me</p>
           <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Let's get in touch!</h1>
-          <p className="mt-3 text-gray-500 dark:text-gray-400">I'd love to hear from you and explore collaboration, answer your questions or discuss a new project.</p>
+          <p className="mt-3 md:text-xl text-gray-500 dark:text-gray-400">Do you have a question, idea, or project that needs assistance? Feel free to reach out to me using the form or connect with me through my social media channels.</p>
         </div>
 
         <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div className='flex flex-row items-center justify-center gap-3 text-xl rounded-xl border border-violet-700'>
                 <PopupButton 
-                  className='text-stone-100 h-min'
+                  className='text-stone-100 h-min p-2'
                   url="https://calendly.com/velezpaula-a" 
                   rootElement={document.getElementById("root")}
                   text="Book a meeting"

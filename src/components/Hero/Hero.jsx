@@ -16,7 +16,7 @@ const Hero = () => {
         <Navbar />
         <div className='h-screen rounded-2xl overflow-hidden relative'> 
           <div>
-            {/* <Spline scene="https://prod.spline.design/xLQqERh8mo9bAVrp/scene.splinecode" /> */}
+            <Spline scene="https://prod.spline.design/xLQqERh8mo9bAVrp/scene.splinecode" />
           </div>
           
           <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10'>

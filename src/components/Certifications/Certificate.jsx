@@ -18,13 +18,13 @@ const Certificate = ({certificate}) => {
 
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={styles.certificate_container}>
-      <p>{firstTitle}</p>
+      <p className='text-2xl md:text-3xl lg:text-4xl'>{firstTitle}</p>
         <motion.div variants={animation} animate={isActive ? "open" : "closed"} className={styles.img_container}>
           <a href={image} target="_blank">
             <img src={image} alt="certificate" />
           </a>
         </motion.div>
-      <p>{secondTitle}</p>
+      <p className='text-2xl md:text-3xl lg:text-4xl'>{secondTitle}</p>
     </div>
   )
 }

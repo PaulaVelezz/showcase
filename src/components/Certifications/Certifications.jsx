@@ -4,19 +4,19 @@ import Certificate from './Certificate';
 const CertificatesData = [
     {
         id: 1,
-        firstTitle: 'Intermediate Certificate',
+        firstTitle: 'Certificate',
         secondTitle: 'Fullstack Developer',
         image: 'https://i.postimg.cc/0NgSVvPZ/c2.webp',
     },
     {
         id: 2,
-        firstTitle: 'Experience Certificate',
+        firstTitle: 'Certificate',
         secondTitle: 'Frontend Developer',
         image: 'https://i.postimg.cc/DzdS5bCy/c3.webp',
     },
     {
         id: 3,
-        firstTitle: 'Intermediate Certificate',
+        firstTitle: 'Certificate',
         secondTitle: 'Programmer',
         image: 'https://i.postimg.cc/4xGZP2jV/c1.webp',
     },

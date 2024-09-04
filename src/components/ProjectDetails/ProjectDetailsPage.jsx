@@ -83,7 +83,7 @@ const ProjectDetailsPage = () => {
                             <div className='p-4 text-xl font-semibold'>
                                 <p>Stack:</p>
                             </div>
-                            <div className='flex flex-row gap-4 text-xl p-4'>
+                            <div className='flex flex-row flex-wrap gap-4 text-xl p-4 overflow-hidden'>
                                 {project.tags.map ((tag, index) => (
                                     <span key={index} className='inline-flex px-3 py-1 text-sm font-light rounded-md bg-zinc-900 text-stone-100'>{tag}</span>
                                 ))}
