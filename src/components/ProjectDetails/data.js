@@ -3,9 +3,11 @@ import IMGP2 from '../../assets/Mp2.webp';
 import IMGP3 from '../../assets/Mp3.webp';
 import IMGP4 from '../../assets/Mp4.webp';
 import IMGP5 from '../../assets/Mp5.webp';
+import IMGP6 from '../../assets/Mp6.webp';
 import BG2 from '../../assets/BG2.webp';
 import BG3 from '../../assets/BG3.webp';
 import BG4 from '../../assets/BG4.webp';
+import BG5 from '../../assets/BG5.webp';
 import P11 from '../../assets/p1_1.webp';
 import P12 from '../../assets/p1_2.webp';
 import P13 from '../../assets/p1_3.webp';
@@ -26,6 +28,13 @@ import P51 from '../../assets/p5_1.webp';
 import P52 from '../../assets/p5_2.webp';
 import P53 from '../../assets/p5_3.webp';
 import P54 from '../../assets/p5_4.webp';
+import ABS1 from '../../assets/abstract/abstract-5-ConstanzeMarie.webp';
+import ABS2 from '../../assets/abstract/abstract-4-SteveJohnson.webp';
+import ABS3 from '../../assets/abstract/abstract-3-SteveJohnson.webp';
+import ABS4 from '../../assets/abstract/abstract-6-ConstanzeMarie.webp';
+import ABS5 from '../../assets/abstract/abstract-7-SteveJohnson.webp';
+import ABS6 from '../../assets/abstract/abstract-2-SteveJohnson.webp';
+// import ABS7 from '../../assets/abstract/abstract-7-SteveJohnson.webp';
 
 
 const projects = [
@@ -37,6 +46,7 @@ const projects = [
         tags: ['HTML5', 'JavaScript', 'React.js', 'Vite.js', 'TailwindCSS', 'Framer-Motion', 'React-Router-Dom', 'prop-types', 'Figma'],
         img: IMGP5,
         BGimg: IMGP5,
+        AbsBG: ABS1,
         pageDesc:'Development of a landing page, with a highly intuitive user experience and a modern user interface adapted for all devices. In this way, a successful incorporation of knowledge is guaranteed.',
         features: [
             {   
@@ -70,6 +80,7 @@ const projects = [
         tags: ['HTML5', 'JavaScript', 'React.js', 'Vite.js', 'NextUI', 'TailwindCSS', 'Axios', 'Formik', 'YUP', 'React-Router-Dom', 'JWT', 'react-simple-chatbot'],
         img: IMGP1,
         BGimg: IMGP1,
+        AbsBG: ABS2,
         pageDesc:'Educational management platform that optimizes communication and monitoring processes between the institution, teachers and students. Providing transparency, comfort and immediacy to users. With this tool, it is possible to overcome the limitations present in traditional communication, reducing incoherent messages and loss of information.',
         features: [
             {
@@ -103,6 +114,7 @@ const projects = [
         tags: ['HTML5', 'CSS3', 'TypeScript', 'React.js', 'Next.js', 'TailwindCSS', 'Axios', 'JWT', 'Redux', 'Vercel', 'Figma', 'Trello', 'Slack'],
         img: IMGP2,
         BGimg: BG2,
+        AbsBG: ABS3,
         pageDesc:'A WebApp that connects reliable service providers with clients in real time, offering quick solutions to home problems. Reparame offers a variety of services from gas fitters and electricians to painters, ready to address your needs. Additionally, a positive and safe experience is guaranteed through a rating and comment system.',
         features: [
             {
@@ -136,6 +148,7 @@ const projects = [
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Vercel', 'Figma', 'Trello', 'Miro', 'Slack'],
         img: IMGP3,
         BGimg: BG3,
+        AbsBG: ABS4,
         pageDesc:'Development of a virtual learning platform, which offers a tailored learning paths and content adapt to individual learning styles, ensuring optimal understanding and engagement. Utilizing adaptive learning technology, it caters to visual, auditory, kinesthetic, and other learning styles, maximizing comprehension.',
         features: [
             {
@@ -169,6 +182,7 @@ const projects = [
         tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit', 'Vite.js', 'Styled-Components', 'Figma'],
         img: IMGP4,
         BGimg: BG4,
+        AbsBG: ABS5,
         pageDesc:'Development of a landing page for a store specialized in the sale of focaccias. By combining a user-centric design with intuitive features, creating a smooth and efficient food ordering experience ensuring a stress-free purchase.', 
         features: [
             {
@@ -194,22 +208,23 @@ const projects = [
         imgFour: P44,
         URL: 'https://github.com/PaulaVelezz/Integrador-JavaScript-NUCBA',
     },
-    // {
-    //     id: 5,
-    //     title: 'The Blessed Bean',
-    //     categories: ['UI Design', 'Web Development'],
-    //     desc: 'Desarrollo de tienda e-commerce.',
-    //     tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit','Formik', 'YUP', 'Vite.js', 'Styled-Components'],
-    //     img: IMGP5,
-    //     BGimg: BG5,
-    //     pageDesc:'Desarrollo de una tienda e-commerce especializada en la venta de una amplia variedad de cafes. Interfaz minimalista y moderna.',
-    //     bullets: [
-    //         'bullet número 1',
-    //         'bullet número 2',
-    //         'bullet número 3',
-    //         'bullet número 4',
-    //     ]
-    // },
+    {
+        id: 5,
+        title: 'The Blessed Bean',
+        categories: ['UI Design', 'Web Development'],
+        desc: 'Desarrollo de tienda e-commerce.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit','Formik', 'YUP', 'Vite.js', 'Styled-Components'],
+        img: IMGP6,
+        BGimg: BG5,
+        AbsBG: ABS6,
+        pageDesc:'Desarrollo de una tienda e-commerce especializada en la venta de una amplia variedad de cafes. Interfaz minimalista y moderna.',
+        bullets: [
+            'bullet número 1',
+            'bullet número 2',
+            'bullet número 3',
+            'bullet número 4',
+        ]
+    },
 ];
 
 export default projects;

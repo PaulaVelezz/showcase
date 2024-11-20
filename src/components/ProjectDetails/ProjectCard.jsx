@@ -1,51 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import grain from '../../assets/grain.svg';
 
-const ProjectCard = ({ title, categories, desc, tags, img }) => {
-  return (
-    <motion.article className='place-content-center items-center flex flex-col w-full p-9 rounded-xl bg-zinc-950'
-        initial={{y: 100}} 
-        whileInView={{y: 0}}
-        transition={{duration: 0.5, ease: 'easeInOut'}}
-        viewport={{once: true}}
-    >
-        <div className='flex flex-col h-min gap-4 overflow-visible p-0 w-full sm:items-center md:flex-col md:justify-center md:items-center lg:flex-row lg:place-items-start'>
-            <div className='place-content-center items-center flex flex-row gap-2 overflow-hidden md:w-full md:h-[350px] lg:h-full'>
-                <div className='overflow-hidden'>
-                    <img src={img} alt="detail"/>
+const ProjectCard = ({ title, categories, tags, img, AbsBG}) => {
+  const [isHoveredTitle, setIsHoveredTitle] = useState(null);
+
+    return (
+        <article className='bg-zinc-950 rounded-lg overflow-hidden p-3'>
+            <motion.div className='relative aspect-square overflow-hidden group'
+                initial={{y: 100}} 
+                whileInView={{y: 0}}
+                transition={{duration: 0.5, ease: 'easeInOut'}}
+                viewport={{once: true}}
+                onMouseEnter={() => setIsHoveredTitle(title)}
+                onMouseLeave={() => setIsHoveredTitle(null)}
+            >
+
+                <div className='absolute inset-0 w-full h-full'>
+                    <img className={`object-cover rounded-lg transition-all duration-700 ${ isHoveredTitle === title ? 'scale-110 blur-sm brightness-50' : 'scale-100'} `} src={AbsBG} alt="abstract bg" />
+                    <div className={`absolute inset-0 opacity-50 bg-[url('${grain}')]`}></div>
                 </div>
-            </div>
 
-            <div className='md:place-items-center lg:place-items-start justify-between self-stretch flex flex-col overflow-visible h-auto w-full p-2 md:w-full'>
-                <div className='place-items-start items-start flex flex-col gap-6 overflow-visible w-full h-auto text-stone-100'>
-                    <div className='flex flex-col gap-4'>
-                        <div className='flex flex-row items-center gap-4 p-1'>
-                            { categories && categories.map((category, index) => (
-                                <span key={index} className='p-1 text-xs lg:text-sm md:text-xs font-semibold rounded-md bg-lime-400 text-zinc-800'>{category}</span>
-                            ))}
-                        </div>
-                        <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold'>{title}</h2>
-                    </div>
-                    <p className='text-base md:text-lg lg:text-xl'>{desc}</p>
-
-                    <div className='flex flex-row flex-wrap max-w-xl gap-1'>
-                        {tags.map((tag, index) => (
-                            <span key={index} className='inline-flex px-3 py-1 text-xs md:px-2 lg:text-sm md:text-xs font-light rounded-md bg-zinc-800 text-stone-50'>{tag}</span>
-                        ))}
-                    </div>
-
-                    <div className='flex w-full justify-center text-lg font-semibold rounded-md text-stone-100 bg-violet-800 border border-violet-800 p-2 cursor-pointer hover:bg-violet-900'>
-                        <Link to={`/project/${title}`} className='flex items-center gap-2'> 
-                            Learn more 
-                            <svg stroke="currentColor" color="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 17 17 7"></path><path d="M7 7 17 7 17 17"></path></svg>
-                        </Link>
-                    </div>
+                <div className='absolute inset-0 flex items-center justify-center p-12'>
+                    <motion.div className={`relative w-full aspect-square transition-all duration-700 ${ isHoveredTitle === title ? 'scale-110' : 'scale-90' }`}>
+                        <img src={img} alt="project mockup" className='object-cover rounded-lg'/>
+                    </motion.div>
                 </div>
-            </div>
-        </div>
-    </motion.article>
-  )
+
+                <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${ isHoveredTitle === title ? 'opacity-100' : 'opacity-0' }`}>
+                    <Link to={`/project/${title}`} className='inline-flex items-center gap-2 px-6 py-3 bg-black/80 text-white font-medium rounded-md hover:bg-black/90 transition-colors'> 
+                        View More 
+                        <svg stroke="currentColor" color="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 17 17 7"></path><path d="M7 7 17 7 17 17"></path></svg>
+                    </Link>
+                </div>
+
+                <div className='absolute bottom-14 left-0 right-0 flex flex-wrap gap-2 p-4'>
+                    {tags.map((tag, index) => (
+                        <span key={index} className='inline-flex px-3 py-1 text-xs md:px-2 lg:text-sm md:text-xs font-light rounded-md bg-black/80 hover:bg-black/90 transition-colors text-stone-50 backdrop-blur-sm'>{tag}</span>
+                    ))}
+                </div>
+
+                <div className='absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 bg-gradient-to-t from-black/70 to-transparent'>
+                    <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-stone-100'>{title}</h2>
+                    {categories && categories.map((category, index) => (
+                        <span key={index} className='p-1 text-xs lg:text-sm md:text-xs font-semibold rounded-md bg-lime-400 text-zinc-800'>{category}</span>
+                    ))}
+                </div>
+            </motion.div>
+        </article>
+    )
 }
 
 export default ProjectCard; 
