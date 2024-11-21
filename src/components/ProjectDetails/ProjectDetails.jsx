@@ -10,12 +10,12 @@ const ProjectDetails = () => {
 
   return (
     <section ref={ProjectRef} className='relative'>
-      <div className='sticky top-0 left-0 flex flex-col items-center justify-center text-center text-zinc-950 mt-10 pt-3 bg-[#f5f5f4bd] backdrop:filter backdrop-blur-sm rounded-md z-30'>
+      <div className='sticky top-0 left-0 flex flex-col items-center justify-center text-center text-zinc-950 mt-14 pt-3 bg-[#f5f5f4bd] backdrop:filter backdrop-blur-sm rounded-md z-30'>
         <h1 className='text-6xl font-extrabold font-T1Korium tracking-wider'>Projects</h1>
         <motion.div style={{ scaleX }} className='w-[95%] h-[2px] bg-violet-700 rounded-sm mt-3'></motion.div>
       </div>
      
-      <div id='project-details' className='max-w-7xl mx-auto p-5 mt-5 mb-10 grid grid-cols-1 md:grid-cols-2 gap-10'>
+      <div id='project-details' className='max-w-7xl mx-auto p-5 mt-6 mb-14 grid grid-cols-1 md:grid-cols-2 gap-11'>
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

@@ -7,12 +7,14 @@ const ProjectCard = ({ title, categories, tags, img, AbsBG}) => {
   const [isHoveredTitle, setIsHoveredTitle] = useState(null);
 
     return (
-        <article className='bg-zinc-950 rounded-lg overflow-hidden p-3'>
-            <motion.div className='relative aspect-square overflow-hidden group'
-                initial={{y: 100}} 
-                whileInView={{y: 0}}
-                transition={{duration: 0.5, ease: 'easeInOut'}}
-                viewport={{once: true}}
+        <motion.article className='bg-zinc-950 rounded-lg overflow-hidden p-3'
+            initial={{y: 100}} 
+            whileInView={{y: 0}}
+            transition={{duration: 0.5, ease: 'easeInOut'}}
+            viewport={{once: true}}
+        >
+            
+            <div className='relative aspect-square overflow-hidden group'
                 onMouseEnter={() => setIsHoveredTitle(title)}
                 onMouseLeave={() => setIsHoveredTitle(null)}
             >
@@ -47,8 +49,8 @@ const ProjectCard = ({ title, categories, tags, img, AbsBG}) => {
                         <span key={index} className='p-1 text-xs lg:text-sm md:text-xs font-semibold rounded-md bg-lime-400 text-zinc-800'>{category}</span>
                     ))}
                 </div>
-            </motion.div>
-        </article>
+            </div>
+        </motion.article>
     )
 }
 

@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import { easeInOut, easeOut, motion } from 'framer-motion';
-import styles from './Certificate.module.css';
-
-const animation = {
-  initial: {width: 0},
-  open: {width: "auto", transition: {duration: 0.5, easeOut}},
-  closed: {width: 0}
-}
+import { motion } from 'framer-motion';
 
 const Certificate = ({certificate}) => {
   const {firstTitle, secondTitle, image} = certificate;
@@ -17,14 +10,17 @@ const Certificate = ({certificate}) => {
 
 
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={styles.certificate_container}>
-      <p className='text-2xl md:text-3xl lg:text-4xl'>{firstTitle}</p>
-        <motion.div variants={animation} animate={isActive ? "open" : "closed"} className={styles.img_container}>
-          <a href={image} target="_blank">
-            <img src={image} alt="certificate" />
-          </a>
-        </motion.div>
-      <p className='text-2xl md:text-3xl lg:text-4xl'>{secondTitle}</p>
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='w-full flex items-center justify-center gap-4 border-t-[1px] border-violet-700 text-stone-200 pt-[.5vw] pb-[.5vw]'>
+      <motion.div animate={isActive ? "open" : "closed"} className='w-44 h-44'>
+        <a href={image} target="_blank">
+          <img src={image} alt="certificate" className='w-44 h-44 object-contain' />
+        </a>
+      </motion.div>
+
+      <div className='w-full gap-3 flex flex-col items-end justify-center'>
+        <p className='text-2xl md:text-3xl lg:text-4xl'>{firstTitle}</p>
+        <span className='text-lime-400'>{secondTitle}</span>
+      </div>
     </div>
   )
 }

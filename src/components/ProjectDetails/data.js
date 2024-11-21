@@ -3,11 +3,9 @@ import IMGP2 from '../../assets/Mp2.webp';
 import IMGP3 from '../../assets/Mp3.webp';
 import IMGP4 from '../../assets/Mp4.webp';
 import IMGP5 from '../../assets/Mp5.webp';
-import IMGP6 from '../../assets/Mp6.webp';
 import BG2 from '../../assets/BG2.webp';
 import BG3 from '../../assets/BG3.webp';
 import BG4 from '../../assets/BG4.webp';
-import BG5 from '../../assets/BG5.webp';
 import P11 from '../../assets/p1_1.webp';
 import P12 from '../../assets/p1_2.webp';
 import P13 from '../../assets/p1_3.webp';
@@ -33,8 +31,6 @@ import ABS2 from '../../assets/abstract/abstract-4-SteveJohnson.webp';
 import ABS3 from '../../assets/abstract/abstract-3-SteveJohnson.webp';
 import ABS4 from '../../assets/abstract/abstract-6-ConstanzeMarie.webp';
 import ABS5 from '../../assets/abstract/abstract-7-SteveJohnson.webp';
-import ABS6 from '../../assets/abstract/abstract-2-SteveJohnson.webp';
-// import ABS7 from '../../assets/abstract/abstract-7-SteveJohnson.webp';
 
 
 const projects = [
@@ -207,24 +203,7 @@ const projects = [
         imgThree: P43, 
         imgFour: P44,
         URL: 'https://github.com/PaulaVelezz/Integrador-JavaScript-NUCBA',
-    },
-    {
-        id: 5,
-        title: 'The Blessed Bean',
-        categories: ['UI Design', 'Web Development'],
-        desc: 'Desarrollo de tienda e-commerce.',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux Toolkit','Formik', 'YUP', 'Vite.js', 'Styled-Components'],
-        img: IMGP6,
-        BGimg: BG5,
-        AbsBG: ABS6,
-        pageDesc:'Desarrollo de una tienda e-commerce especializada en la venta de una amplia variedad de cafes. Interfaz minimalista y moderna.',
-        bullets: [
-            'bullet número 1',
-            'bullet número 2',
-            'bullet número 3',
-            'bullet número 4',
-        ]
-    },
+    }
 ];
 
 export default projects;
